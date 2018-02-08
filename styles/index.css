@@ -1,0 +1,315 @@
+
+/*设置首页主菜单的属性*/
+#banner{
+	margin-top: 62px;
+}
+#mainMenu{
+	width: 200px;
+	height: 420px;
+	background-color: #f3f3f3;
+	position: relative;
+}
+
+#mainMenu .topSubMenu{
+	margin-bottom: 25px;
+}
+
+#mainMenu .topSubMenu span{
+	margin-right: 30px;
+}
+
+#mainMenu .subMenu{
+	width: 520px;
+	padding: 30px;
+	min-height: 360px;
+	background-color: #fff;
+	border: solid 1px #FF6700;
+	display: none;
+	position: absolute;
+	left: 199px;
+	top: 0px;
+	z-index: 101;
+}
+
+#mainMenu .subMenu .SingelSubMenu p
+{
+	line-height: 28px;
+}
+
+#mainMenu .subMenu .SingelSubMenu span
+{
+	margin-right: 15px;
+}
+
+#mainMenu .subMenu .subMenuTitle
+{
+	font-size: 14px;
+	color: #FF6700;
+	border-bottom: solid 2px #ccc;
+}
+
+#mainMenu .mainMenuText
+{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	padding-left: 20px;
+	position: relative;
+	z-index: 102;
+}
+
+#mainMenu .current
+{
+	background-color: #fff;
+	border: solid 1px #FF6700;
+	border-right: solid 1px #fff;
+	color: #FF6700;
+}
+
+
+/*今日推荐的每个小盒子*/
+/*设置右下边框,然后在设置左边框,避免边框重叠*/
+#recommend .content{
+	width: 196px;
+	height: 248px;
+	border-right: 2px solid #FF6600;
+	border-bottom: 2px solid #FF6600;
+}
+/*设置外层div的左边框*/
+#recommend .borderleft{
+	margin-left: 6px;
+	border-left: 2px solid #FF6600;
+}
+/*每日推荐的P标签的缩进*/
+#recommend .content p{
+	text-indent: 10px;
+	line-height: 20px;
+}
+
+/*电子书,服装 亲子 户外的左侧属性一样*/
+#clothing .clothingCenters,#outdoors .outdoorCenters,#children .childrenCenters{
+	display: none;
+}
+.box1200 .left{
+	width: 240px;
+	height: 440px;
+	border-right: 1px solid #ccc;
+}
+/*设置其宽度*/
+.box1200 .left img{
+	width:240px;
+}
+
+/*设置每个li标签的属性*/
+.box1200 .left ul li{
+	font-size: 14px;
+	color: #515151;
+	float: left;
+	width: 70px;
+	height: 34px;
+	line-height: 34px;
+	padding-right: 10px;
+}
+.box1200 .left ul li a:hover{
+	color: red;
+}
+/*电子书,服装 亲子 户外的左侧属性一样*/
+/*设置中间部分的宽度*/
+#ebook #ebookCenters .center{
+	width: 666px;
+	display: none;
+}
+/*设置当前样式*/
+#ebook #ebookLists .current,#clothing #clothingLists .current,#outdoors #outdoorLists .current,#children #childrenLists .current{
+	background: #FF6600;
+	color: white;
+}
+/*设置中间部分除banner之外的content的属性*/
+#ebook #ebookCenters .center .content{
+	width: 163px;
+	height: 220px;
+	border: 1px solid #CBCBCB;
+	border-collapse: collapse;
+}
+#ebook #ebookCenters .center .content p{
+	height: 30px;
+	line-height: 30px;
+}
+#ebook #ebookCenters .center .content p span{
+	text-decoration: line-through;
+}
+/*右侧新书畅销榜的样式*/
+#ebook .ebookright{
+	width: 282px;
+	border: solid 2px #ccc;
+	overflow-y: hidden;
+}
+/*设置每个li的宽度*/
+#ebook .ebookright ul li{
+	text-indent: 10px;
+	font-size: 12px;
+}
+/*设置图文的display 为none的属性,然后在设置disyes,这时候disYes才能生效,同时ebookRightImgText不能加任何前缀,否则后面的样式不能显示*/
+.ebookRightImgText{
+	display: none;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+
+
+#ebook .ebookright ul li .ebookRightImgText span{
+	float: left;
+	font-size: 12px;
+	margin-right: 5px;
+	line-height: 30px;
+}
+#ebook .ebookright ul li .ebookRightImgText .ebookText{
+	width: 100px;
+	line-height: 18px;
+}
+
+/**/
+
+/*服装,户外,儿童都是用该样式*/
+.box1200 .right div div{
+	width: 174px;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+.box1200 .right div p{
+	height: 20px;
+	line-height: 20px;
+	text-indent: 10px;
+}
+.box1200 .logoLists{
+	height: 64px;
+}
+/*每个板块的logo列表也是通用*/
+.box1200 .logoLists li{
+	float: left;
+	height: 64px;
+	padding-right: 20px;
+}
+/*f服装优惠券样式 ,也是通用的样式*/
+.box1200 .right div .offsale{
+	background: red;
+	margin: 10px 0px 20px 10px;
+	width: 104px;
+	height: 16px;
+	line-height: 16px;
+	border-radius: 5px;
+}
+
+/*服装,户外,儿童都是用该样式*/
+
+/*家具样式*/
+#furnishing .furnishindex{
+	height: 400px;
+	width: 400px;
+}
+#furnishing .furnishingListsTop,#furnishing .furnishingListsBottom{
+	width: 198px;
+	border-bottom: 2px solid #CCC;
+	border-right: 2px solid #ccc;
+}
+#furnishing .furnishingListsTop p,#furnishing .furnishingListsBottom p{
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+
+/*推广的样式*/
+#popularity{
+	position: relative;
+	height: 630px;
+	overflow-x: hidden;
+}
+/*定位小圆角*/
+#popularity #popularityTab{
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	top: 17px;
+	right: 10px;
+}
+/*tab的小圆角,直接输入法输入点的符号..然后设置color*/
+#popularity #popularityTab li{
+	float: left;
+	font-size: 20px;
+	margin-right: 5px;
+	cursor: pointer;
+	color: #939393;
+}
+#popularity #popularityTab .current{
+	color: #FF6600;
+}
+#popularityContents{
+	width: 3630px;
+	height: 580px;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+}
+
+/*设置每个盒子的宽度和marging*/
+#popularity .popularityContent {
+	width: 153px;
+	margin: 0px 20px 0px 20px;
+	padding:10px 20px 0px 20px;
+	cursor: pointer;
+}
+#popularity .popularityContent p{
+	width: 148px;
+	line-height: 25px;
+	font-size: 14px;
+}
+#popularity .popularityContent .comments{
+	text-indent: 20px;
+}
+
+/*评论图标*/
+.msgIcon{
+	background-position-x: -3px;
+	background-position-y:-87px;
+	width: 24px;
+	height: 16px;
+	position: relative;
+	top: -20px;
+    left: -6px;
+}
+
+/*顶部固定搜索*/
+#topFixSearch
+{
+	height: 90px;
+	background-color: #f2f2f2;
+	border-bottom: solid 2px #FF6600;
+	position: fixed;
+	z-index: 999;
+	left: 0px;
+	top: 0px;
+	display: none;
+	
+	box-shadow: 2px 5px 8px #595959;
+	
+	/*
+	 * box-shadow是给对象实现图层阴影效果
+	 * 阴影类型：此参数是一个可选值，如果不设值，其默认的投影方式是外阴影；如果取其唯一值“inset”,就是将外阴影变成内阴影，也就是说设置阴影类型为“inset”时，其投影就是内阴影；
+
+       X-offset:是指阴影水平偏移量其值可以是正负值可以取正负值，如果值为正值，则阴影在对象的右边，反之其值为负值时，阴影在对象的左边；
+
+       Y-offset:是指阴影的垂直偏移量，其值也可以是正负值，如果为正值，阴影在对象的底部，反之其值为负值时，阴影在对象的顶部；
+
+                   阴影模糊半径：此参数是可选，，但其值只能是为正值，如果其值为0时，表示阴影不具有模糊效果，其值越大阴影的边缘就越模糊；
+
+                   阴影扩展半径：此参数可选，其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值是，则缩小
+
+                   阴影颜色：此参数可选，如果不设定任何颜色时，浏览器会取默认色，但各浏览器默认色不一样，特别是在webkit内核下的safari和chrome浏览器将无色，也就是透明，建议不要省略此参数。
+	 */
+}
+
+#newSearch
+{
+	margin: 30px 200px 0px 0px;
+}

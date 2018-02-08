@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/common.css"/>
+		<script src="scripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.contentTitle{
+				height: 38px;
+				border-bottom: #FF6600 6px solid;
+			}
+			.contentTitle p{
+				width: 130px;
+				height: 38px;
+				line-height: 39px;
+			}
+			.contentTitle ul li{
+				font-size: 14px;
+				float: left;
+				width: 74px;
+				height: 38px;
+				line-height: 38px;
+				text-align: center;
+				padding: 0px 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="contentTitle width1200 marginCenter">
+			<p class="font22px float_left"><span class="font28px white bgFF6600 paddingl10r10">独</span>&nbsp;家供应</p>
+			<!--复制后需要更改lists的值-->
+			<ul class="float_right width670" id="lists">
+				<li class="current">社会金融</li>
+				<li>社会文学</li>
+				<li>社会科学</li>
+				<li>社会失血</li>
+				<li>社会呵呵</li>
+				<li>社会哈哈</li>
+				<li>社会文学</li>
+			</ul>
+			<div class="float_clear"></div>
+		</div>
+		<div class="">
+			
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$(function () {
+			$("#lists li").hover(function () {
+				$(this).addClass("bgFF6600 white").siblings().removeClass("bgFF6600 white");
+			});
+		});
+	</script>
+</html>
+
+
+<style type="text/css">
+	#ebook .ebookright{
+	width: 282px;
+	border: solid 2px #ccc;
+	overflow-y: hidden;
+}
+/*设置每个li的宽度*/
+#ebook .ebookright ul li{
+	text-indent: 10px;
+	font-size: 12px;
+}
+/*设置图文的display 为none的属性,然后在设置disyes,这时候disYes才能生效,同时ebookRightImgText不能加任何前缀,否则后面的样式不能显示*/
+.ebookRightImgText{
+	display: none;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+
+
+#ebook .ebookright ul li .ebookRightImgText span{
+	float: left;
+	font-size: 12px;
+	margin-right: 5px;
+	line-height: 30px;
+}
+#ebook .ebookright ul li .ebookRightImgText .ebookText{
+	width: 100px;
+	line-height: 18px;
+}
+</style>

@@ -1,0 +1,171 @@
+/*通栏属性*/
+/*网页变灰的方法,IE不得行,真的垃圾*/
+/*html{
+	filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+}*/
+body{
+	color: #595959;
+}
+.main_box{width: 100%;}
+/*banner的背景属性,设置满屏,否则大点的分辨率将不会完全显示图片*/
+.box1200{width: 1200px;margin: 0 auto;}
+.box90{width: 90px;}
+.box100{width:100px}
+.box120{width: 120px;}
+.box130{width: 130px;}
+.box190{width: 190px;}
+.box550{width: 550px;}
+.contentBox{width: 1200px;}
+/*高度*/
+.height80{height: 80px;}
+.height90{height: 90px;}
+.height28{height: 28px;}
+.height50{height: 50px;}
+.height60{height: 60px;}
+.height100{height: 100px;}
+.height150{height: 150px;}
+.height200{height: 200px;}
+.height512{height: 512px;}
+.height600{height: 600px;}
+.height480{height: 480px;}
+.height1200{height: 1200px;}
+.width40{width: 40px;}
+.width230{width: 230px;}
+.width400{width:400px;}
+.width316{width:316px;}
+.width372{width:372px;}
+.width580{width: 580px;}
+.width800{width: 800px;}
+.width1200{width: 1200px;}
+.width900{width: 900px;}
+.width980{width: 980px;}
+/*字体*/
+.font14px{font-size: 14px;}
+.font16px{font-size: 16px;}
+.font18px{font-size: 18px;}
+.font20px{font-size: 20px;}
+.font22px{font-size: 22px;}
+.font24px{font-size: 24px;}
+.font28px{font-size: 28px;}
+.textCenter{text-align: center;}
+.textRight{text-align: right;}
+/*字体不加粗*/
+.fontnormal{font-weight: normal;}
+/*font 加粗*/
+.fontbold{font-weight: bold;}
+/*斜体*/
+.fontoblique{font-style: oblique;}
+/*颜色*/
+/*暗红色*/
+.darkred{color: #d43b33;}
+.colorBlack{color: #2B2E38;}
+.colorFF6600{color: #FF6600;}
+.color939393{color: #939393;}
+.colorF91616{color: #F91616;}
+.color808080{color: #808080;}
+/*灰色*/
+.gray{color: #7a7a7a;}
+.colorf2f2f2{color: #f2f2f2;}
+/*白色*/
+.white{color: white;}
+.bgFF6600{background-color: #FF6600 ;}
+.bg93D46F{background-color: #93D46F;}
+.bgBFBFBF{background-color: #BFBFBF;}
+.bg101010{background-color: #101010}
+.bgwhite{background-color: white;}
+/*颜色*/
+/*左右浮动*/
+.float_left{float: left;}
+.float_right{float: right;}
+.float_clear{clear: both;}
+/*浮动*/
+/*表示边框的类*/
+.border_bottom{border-bottom: 1px solid #cbcbcb;}
+/*margin居中*/
+.marginCenter{margin: 0 auto;}
+/*padding类*/
+.paddingtop5{padding-top: 5px;}
+.paddingtop50{padding-top: 50px;}
+.paddingtop30{padding-top: 30px;}
+.paddingtop20{padding-top: 20px;}
+.paddingtop10{padding-top: 10px;}
+.paddingbottom15{padding-bottom: 15px;}
+.paddingbottom30{padding-bottom: 30px;}
+.paddingleft10{padding-left: 10px;}
+.paddingleft6{padding-left: 6px;}
+.paddingleft210{padding-left: 210px;}
+.paddingleft260{padding-left: 260px;}
+.paddingl10r10{padding:0px 10px;}
+.paddingright80{padding-left:40px;}
+.paddingright50{padding-right: 50px;}
+.paddingright37{padding-right: 37px;}
+/*margin类*/
+.marginright8{margin-right: 8px;}
+.marginleft10px{margin-left: 10px;}
+.marginleft20px{margin-left: 20px;}
+.marginright35{margin-right: 35px;}
+.marginleft45px{margin-left: 45px;}
+.marginleft80px{margin-left: 80px;}
+.marginleft250px{margin-left: 250px;}
+.margintop80{margin-top: 80px;}
+.margintop50{margin-top: 50px;}
+.margintop30{margin-top: 30px;}
+.margintop20{margin-top: 20px;}
+.margintop10{margin-top: 10px;}
+.margintop6{margin-top: 6px;}
+.marginbottom30{margin-bottom: 30px;}
+.marginbottom50{margin-bottom: 50px;}
+/*border*/
+.Border{
+	border: 1px solid #ccc;
+}
+/*分页的属性,因为结构相同,所以放在公共样式中*/
+.price{color: #F4290D;font-size: 24px;}
+.price2{color: #F4290D;font-size: 14px;}
+.delPrice{color:#808080;text-decoration: line-through;margin-left:10px}
+/*缩进10px*/
+.textIndent10{text-indent: 10px;}
+.lineHight20{line-height: 20px;}
+/*每个title公用样式,仅需设置宽度*/
+.contentTitle{
+	height: 38px;
+	border-bottom: #FF6600 4px solid;
+}
+.contentTitle p{
+	width: 200px;
+	height: 38px;
+	line-height: 39px;
+}
+.contentTitle ul li{
+	float: left;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+/*title样式结束*/
+/*图标定位,在加了背景色的情况下,不能再使用符合属性,否则将会失效*/
+.bitBackPic{
+	background-image: url(../images/bgicon.png) ;
+	background-repeat: no-repeat;
+}
+.disYes{
+	display: block;
+}
+.bgF2F2F2{background-color: #F2F2F2;}
+/*设置内容评价的背景图定位属性,从后台获取一个评级,然后调用对应的css样式即可*/
+.star{background: url(../images/star_small.gif) no-repeat; ;height:20px}
+.star10{background-position: 47px 0px;}
+.star9{background-position: 47px -20px;}
+.star8{background-position: 47px -40px;}
+.star7{background-position: 47px -60px;}
+.star6{background-position: 47px -80px;}
+.star5{background-position: 47px -100px;}
+.star4{background-position: 47px -120px;}
+.star3{background-position: 47px -140px;}
+.star2{background-position: 47px -160px;}
+.star1{background-position: 47px -180px;}
+a:hover{color: red;}

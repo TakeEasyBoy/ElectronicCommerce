@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>乐购商城</title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/header.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/common.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/login.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+		<script src="scripts/jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/OtherEffects.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="overflow-x: hidden;">
+		<!--header-->
+		<div class="main_box height28 bg101010 marginbottom50">
+			<!--定义版心-->
+			<div id="header" class="box1200 height80 marginCenter">
+				<!--两段话,需要浮动-->
+				<p class="float_left white paddingleft260">legochina.cn</p>
+				<p class="float_right white font14px">欢迎光临<a href="login.html" class="colorFF6600">乐购</a>，请 <a href="login.html" class="colorFF6600">登录</a>\<a href="javascript:;" class="colorFF6600">注册</a></p>
+				<div class="float_clear"></div>
+				<!--搜索框+购物车-->
+				<!--logo+搜索框+我的订单-->
+				<!--Logo图片-->
+				<div class="logo">
+					<a href="index.html"><img class="float_left" src="images/tpLogo.gif"/></a>
+				</div>
+				<!--log文字-->
+				<p class="font24px white logoText textCenter">登录</p>
+				<!--说明文字-->
+				<p class="font28px fontbold welcom">欢迎登录</p>
+				
+			</div>
+			<div class="float_clear"></div>
+		</div>
+		
+		
+	  	<div class="main_box" id="loginBanner">
+        	<div class="box1200">
+        		<div id="taobaoLogin">
+					<ul id="loginTitle" >
+						<li class="current">扫码登录</li>
+						<li>电脑登录</li>
+						<div class="clear"></div>
+					</ul>
+					<div class="margintop50" id="userLogin">
+						<div id="qrcodeContent" >
+							<div class="qrcodeContentImgs">
+								<p id="qrCodeDetaile"><img src="images/eqCodeShow.png"/></p>
+								<p id="phone"><img src="images/phone.png"/></p>
+							</div>
+							<p class="textCenter paddingtop30">打开手机版<span class="paddingl10r10">乐购</span>APP扫一扫</p>
+						</div>
+						<div id="pcContent" style="display: none;">
+							<!--用户名-->
+							<form action="log.php" method="post" id="userInform">
+								<p>
+									<input type="text" id="userName" value="" placeholder="会员名/邮箱/手机" />
+									<span class="taobaoFont fontBack">&#xe601</span>
+									<img id="delICON" src="images/delICON.png"/>
+								</p>
+								<!--密码-->
+								<p>
+									<input type="password" id="passWord" value="" />
+									<span class="taobaoFont fontBack">&#xe600</span>
+								</p>
+								<p><lable><input type="checkbox" id="autologin" value="" />两周内自动登录</lable><a id="forgotPsd" href="">忘记密码?</a></p>
+								<!--登录按钮-->
+								<p class="paddingtop30">
+									<input type="submit" id="loginBtn" value="登录" />
+								</p>
+								<!--立即注册-->
+								<p class="imediatReg font18px textCenter">
+									<a class="colorFF6600" href="">立即注册</a>
+								</p>
+							</form>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+        	</div>
+        </div>
+        <!--模板可编辑区域结束-->	
+		<!--footer-->
+		<div class="main_box " id="footer">
+			<div class="float_clear"></div>
+			<p class="marginCenter margintop30"><span>公司简介</span><span>Investor Relations</span><span>网站联盟</span><span>乐购招商</span><span>机构销售 </span>  手机乐购</p>
+			<p class="textCenter margintop20 box1200" style="font-size: 10px;">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+		</div>
+		<!--楼梯滚动特效-->
+		
+		
+		
+	</body>
+</html>

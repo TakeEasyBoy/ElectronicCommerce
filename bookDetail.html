@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>乐购·读好书</title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/header.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/bookDetailes.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/common.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/slide.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+		<script src="scripts/jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/tyslide.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/OtherEffects.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="overflow-x: hidden;">
+		<!--header-->
+		<div class="main_box  height28 bg101010">
+			<!--定义版心-->
+			<div id="header" class="box1200 height80 marginCenter">
+				<!--两段话,需要浮动-->
+				<p class="float_left white paddingleft210">legochina.cn</p>
+				<p class="float_right white font14px">欢迎光临<a href="javascript:;" class="colorFF6600">乐购</a>，请 <a href="javascript:;" class="colorFF6600">登录</a>\<a href="javascript:;" class="colorFF6600">注册</a></p>
+				<div class="float_clear"></div>
+				<!--搜索框+购物车-->
+				<!--logo+搜索框+我的订单-->
+				<div class="logo">
+					<!--Logo图片-->
+					<a href="javascript:;"><img class="float_left" src="images/products/logo_read.jpg"/></a>
+				</div>
+				<div class="box1200" id="searchShop">
+					<ul class="float_right" id="shopCart">
+						<li class="current">购物车 <span>3</span></li>
+						<li>我的订单</li>
+					</ul>
+					<div class="float_right" id="search">
+						<form action="#" method="get">
+							<input class="float_left" type="text" id="keywords" value="" placeholder="创意文具" />
+							<input class="float_left" type="button" id="searchBtn" value="" />
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="float_clear"></div>
+		
+		<!--banner-->
+		<div id="banner" class="box1200 height480">
+			<div id="nav" class="float_left bg93D46F white font16px textCenter">
+				<span>全部商品分类    ^ </span>
+			</div>
+			<!--菜单栏-->
+			<ul id="subNav" class="float_right font16px fontbold textCenter">
+				<li><a href="javascript:;">图书</a></li>
+				<li><a href="javascript:;">电子书</a></li>
+				<li><a href="javascript:;">原创文学</a></li>
+				<li><a href="javascript:;">服装</a></li>
+				<li><a href="javascript:;">运动户外</a></li>
+				<li><a href="javascript:;">孕婴童</a></li>
+				<li><a href="javascript:;">家居</a></li>
+				<li><a href="javascript:;">创意文具 </a></li>
+				<li><a href="javascript:;">地方特产</a></li>
+				<li><a href="javascript:;">海外购</a></li>
+				<li><a href="javascript:;">电器城</a></li>
+			</ul>
+			<!--banner轮播图-->
+			<div class="float_left">
+				<div class="pptbox" id="bookbannerPlay">
+					<ul class="innerwrapper">
+						<li><a href="javascript:;"><img src="images/banner1.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner2.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner3.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner4.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner5.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner1.jpg"/></a></li>
+					</ul>
+					<ul class="controls">
+						<li class="current"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+						<li><span>6</span></li>
+					</ul>			
+					<span class="btnleft"></span>
+					<span class="btnright"></span>
+				</div>
+			</div>
+			<!--右侧热卖畅销-->
+			<div class="float_left right">
+				<p class="font16px bg93D46F white fontbold">热卖畅销</p>
+				<ul>
+					<li>
+						<div class="hotSales disYes">
+							<a href="" class="float_left "><img src="images/products/book01.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">1</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+						<div class="hotSales">
+							<a href="" class="float_left "><img src="images/products/book02.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">1</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="hotSales">
+							<a href="" class="float_left "><img src="images/products/book01.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">2</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+						<div class="hotSales disYes">
+							<a href="" class="float_left "><img src="images/products/book02.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">2</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="hotSales">
+							<a href="" class="float_left "><img src="images/products/book01.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">3</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+						<div class="hotSales disYes">
+							<a href="" class="float_left "><img src="images/products/book02.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">3</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="hotSales">
+							<a href="" class="float_left "><img src="images/products/book01.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">4</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+						<div class="hotSales disYes">
+							<a href="" class="float_left "><img src="images/products/book02.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">4</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="hotSales">
+							<a href="" class="float_left "><img src="images/products/book01.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">5</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+						<div class="hotSales disYes">
+							<a href="" class="float_left "><img src="images/products/book02.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">5</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="hotSales">
+							<a href="" class="float_left "><img src="images/products/book01.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">6</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+						<div class="hotSales disYes">
+							<a href="" class="float_left "><img src="images/products/book02.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">6</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="hotSales">
+							<a href="" class="float_left "><img src="images/products/book01.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">7</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+						<div class="hotSales disYes">
+							<a href="" class="float_left "><img src="images/products/book02.jpg"/></a>
+							<div class="float_right booktextImg">
+								<p class="numBer textCenter float_right white">7</p>
+								<span class="float_left">《三体》刘慈欣 一场科幻的史诗风暴</span>
+							</div>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="float_clear"></div>
+			
+		</div>
+		<div id="banner2" class="box1200 ">
+			<a href=""><img src="images/products/banner2.jpg"/></a>
+		</div>
+		
+		<div class="float_clear"></div>
+		
+		<!--图书折扣区-->
+		<div id="bookDiscout" class="box1200 margintop50">
+			<div class="contentTitle box1200">
+				<p class="font22px float_left white bgFF6600 textIndent10">乐购·图书折扣区</p>
+				<!--复制后需要更改lists的m名字-->
+			</div>
+			<!--图文详情第一排-->
+			<!--图文详情1-->
+			<div class="borderleft">
+				
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book04.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class=" colorF91616 star star8">推荐:</p>
+					<p class="price">&yen;:299</p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book04.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class=" colorF91616 star star10">推荐:</p>
+					<p class="price">&yen;:299</p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book04.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class=" colorF91616 star star3">推荐:</p>
+					<p class="price">&yen;:299</p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book04.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class=" colorF91616 star star4">推荐:</p>
+					<p class="price">&yen;:299</p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book04.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class=" colorF91616 star star5">推荐:</p>
+					<p class="price">&yen;:299</p>
+				</div>
+				<div class="float_clear"></div>
+				<!--第一排结束-->
+				<!--第二排-->
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book05.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class=" colorF91616 star star6">推荐:</p>
+					<p class="price">&yen;:89</p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book05.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px colorF91616 star star7">推荐:</p>
+					<p class="price">&yen;:89</p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book05.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px colorF91616 star star8">推荐:</p>
+					<p class="price">&yen;:89</p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book05.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px colorF91616 star star9">推荐:</p>
+					<p class="price">&yen;:89</p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book05.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px colorF91616 star star10">推荐:</p>
+					<p class="price">&yen;:89</p>
+				</div>
+				<div class="float_clear"></div>
+			<!--第二排结束-->
+			</div>
+		</div>
+		<!--图书折扣区结束-->
+			
+		<!--新书上架-->
+		<div id="newBook" class="box1200 margintop50">
+			<div class="contentTitle box1200">
+				<p class="font22px float_left"><span class="font28px bgFF6600 white paddingl10r10">新</span>&nbsp;书上架</p>
+				<!--复制后需要更改lists的m名字-->
+			</div>
+			<!--图文详情第一排-->
+			<!--图文详情1-->
+			<div class="borderleft float_left width900">
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book11.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:299 <span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book12.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book03.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book04.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book05.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+				</div>
+				<div class="float_clear"></div>
+				<!--第一排结束-->
+				<!--第二排-->
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book15.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book07.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book08.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book09.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book10.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+					<p class="font14px color808080">中国邮电出版社</p>
+					<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+				</div>
+				<div class="float_clear"></div>
+			<!--第二排结束-->
+			</div>
+
+			<!--新书右侧部分-->
+			<div class="float_right ebookright">
+				<p class="font18px color939393 textCenter">主编推荐</p>
+				<ul>
+					<li>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">1</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">1</span>
+							<span>就喜欢你看不惯我</span>
+							<span>作者</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">2</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">2</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">3</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">3</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">4</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">4</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">5</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">5</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">6</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">6</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">7</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">7</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="float_clear"></div>
+		</div>
+		<!--新书上架结束-->
+		<!--独家供应-->
+		<div id="soleAgency" class="box1200 marginCenter margintop50">
+			<!--标题-->
+			<div class="contentTitle box1200">
+				<p class="font22px float_left"><span class="font28px bgFF6600 white paddingl10r10">独</span>&nbsp;家供应</p>
+				<!--复制后需要更改lists的m名字-->
+				<ul class="float_right width580 " id="soleAgencyLists">
+					<li class="bgFF6600 white">货币金融</li>
+					<li>社会文学</li>
+					<li>科学技术</li>
+					<li>儿童文学</li>
+					<li>教学参辅</li>
+					<li>生活</li>
+					<li>小说</li>
+				</ul>
+			<div class="float_clear"></div>
+			</div>
+			<!--左右箭头-->
+			<div id="leftArrow"></div>
+			<div id="rightArrow"></div>
+			<!--外框大盒子,用来做轮播效果-->
+			<div id="tabBox">
+				<div class="borderleft float_left box1200">
+					<!--图文详情1-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book11.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:299 <span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情2-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book11.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:299 <span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情3-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book12.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情4-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book03.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情5-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book04.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情6-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book05.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:299<span class="delPrice">49</span></p>
+					</div>
+					
+					<div class="float_clear"></div>
+					<!--第一排结束-->
+					<!--第二排-->
+					<!--图文详情1-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book11.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">白夜行 东野圭吾</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:299 <span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情2-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book15.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情3-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book07.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情4-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book08.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情5-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book09.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情6-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book10.jpg"/></a></div>
+						<div><img src="images/products/book06_80discout.jpg"/></div>
+						<p class="font14px"><a href="javascript:;">偷影子的人</a></p>
+						<p class="font14px color808080">中国邮电出版社</p>
+						<p class="price2">&yen;:89<span class="delPrice">49</span></p>
+					</div>
+					<div class="float_clear"></div>
+				<!--第二排结束-->
+				</div>
+			</div>
+			<ul id="tabLi" class="height28">
+				<li class="current">●</li>
+				<li>●</li>
+				<li>●</li>
+				<li>●</li>
+				<li>●</li>
+				<li>●</li>
+				<li>●</li>
+			</ul>
+			<div class="float_clear"></div>		
+		</div>
+		<!--独家供应结束-->
+		
+		<!--猜你喜欢-->
+		<div id="wouldLike" class="box1200 margintop50">
+			<div class="contentTitle box1200">
+				<p class="font22px float_left"><span class="font28px bgFF6600 white paddingl10r10">猜</span>&nbsp;你喜欢</p>
+				<!--复制后需要更改lists的m名字-->
+				<p class="float_right font20px" id="changeAnother">换一批</p>
+				<div class="float_clear"></div>
+			</div>
+			<!--图文详情第一排-->
+			<!--图文详情1-->
+			<div class="wouldLikeContents">
+				<div class="borderleft">
+					<!--图文详情2-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book08.jpg"/></a></div>
+						<p class="font14px"><a href="javascript:;">金融炼金术</a></p>
+						<p class=" gray">中国邮电出版社</p>
+						<p class="price2">&yen;:19 <span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情3-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book16.jpg"/></a></div>
+						<p class="font14px"><a href="javascript:;">梦的解析</a></p>
+						<p class=" gray">中国邮电出版社</p>
+						<p class="price2">&yen;:29<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情4-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book17.jpg"/></a></div>
+						<p class="font14px"><a href="javascript:;">平凡的世界 路遥</a></p>
+						<p class=" gray">中国邮电出版社</p>
+						<p class="price2">&yen;:39<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情5-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book18.jpg"/></a></div>
+						<p class="font14px"><a href="javascript:;">规矩和爱</a></p>
+						<p class=" gray">中国邮电出版社</p>
+						<p class="price2">&yen;:19<span class="delPrice">49</span></p>
+					</div>
+					<!--图文详情6-->
+					<div class="content float_left">
+						<div class="textCenter"><a href=""><img src="images/products/book19.jpg"/></a></div>
+						<p class="font14px"><a href="javascript:;">繁花 东野圭吾</a></p>
+						<p class=" gray">中国邮电出版社</p>
+						<p class="price2">&yen;:9.9<span class="delPrice">49</span></p>
+					</div>
+					<div class="float_clear"></div>
+				</div>
+				<div class="borderleft">
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book08.jpg"/></a></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术</a></p>
+					<p class=" gray">中国邮电出版社</p>
+					<p class="price2">&yen;:19<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book16.jpg"/></a></div>
+					<p class="font14px"><a href="javascript:;">梦的解析</a></p>
+					<p class=" gray">中国邮电出版社</p>
+					<p class="price2">&yen;:29<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book17.jpg"/></a></div>
+					<p class="font14px"><a href="javascript:;">平凡的世界 路遥</a></p>
+					<p class=" gray">中国邮电出版社</p>
+					<p class="price2">&yen;:39<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book18.jpg"/></a></div>
+					<p class="font14px"><a href="javascript:;">规矩和爱</a></p>
+					<p class=" gray">中国邮电出版社</p>
+					<p class="price2">&yen;:19<span class="delPrice">49</span></p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book19.jpg"/></a></div>
+					<p class="font14px"><a href="javascript:;">繁花 东野圭吾</a></p>
+					<p class="gray">中国邮电出版社</p>
+					<p class="price2">&yen;:9.9<span class="delPrice">49</span></p>
+				</div>
+				<div class="float_clear"></div>
+			</div>
+			</div>
+		</div>
+		<!--猜你喜欢下面的广告-->
+		<div class="bookBanner3 box1200 height200">
+			<!--第1个图文-->
+			<div class="float_left bookBannerImgText">
+				<div class="bookBannerText float_left">
+					<p>人文社科精选</p>
+					<p class="color808080">书好价优</p>
+					<p class="offsale">满三件折上7折</p>
+				</div>
+				<div class="bookBannerImg float_right">
+					<img src="images/products/book001.jpg"/>
+				</div>
+			</div>
+			<!--第2个图文-->
+			<div class="float_left bookBannerImgText">
+				<div class="bookBannerText float_left">
+					<p>人文社科精选</p>
+					<p class="color808080">书好价优</p>
+					<p class="offsale">满三件折上7折</p>
+				</div>
+				<div class="bookBannerImg float_right">
+					<img src="images/products/book001.jpg"/>
+				</div>
+			</div>
+			<!--第3个图文-->
+			<div class="float_left bookBannerImgText">
+				<div class="bookBannerText float_left">
+					<p>人文社科精选</p>
+					<p class="color808080">书好价优</p>
+					<p class="offsale">满三件折上7折</p>
+				</div>
+				<div class="bookBannerImg float_right">
+					<img src="images/products/book001.jpg"/>
+				</div>
+			</div>
+			<!--第4个图文-->
+			<div class="float_left bookBannerImgText">
+				<div class="bookBannerText float_left">
+					<p>人文社科精选</p>
+					<p class="color808080">书好价优</p>
+					<p class="offsale">满三件折上7折</p>
+				</div>
+				<div class="bookBannerImg float_right">
+					<img src="images/products/book001.jpg"/>
+				</div>
+			</div>
+			<!--第5个图文-->
+			<div class="float_left bookBannerImgText">
+				<div class="bookBannerText float_left">
+					<p>人文社科精选</p>
+					<p class="color808080">书好价优</p>
+					<p class="offsale">满三件折上7折</p>
+				</div>
+				<div class="bookBannerImg float_right">
+					<img src="images/products/book001.jpg"/>
+				</div>
+			</div>
+			<!--第6个图文-->
+			<div class="float_left bookBannerImgText">
+				<div class="bookBannerText float_left">
+					<p>人文社科精选</p>
+					<p class="color808080">书好价优</p>
+					<p class="offsale">满三件折上7折</p>
+				</div>
+				<div class="bookBannerImg float_right">
+					<img src="images/products/book001.jpg"/>
+				</div>
+			</div>
+		</div>
+		
+		<div id="banner2" class="box1200 ">
+			<a href=""><img src="images/products/banner2.jpg"/></a>
+		</div>
+		
+		<!--footer-->
+		<div class="main_box margintop30" id="footer">
+			<div class="footerPics box1200 marginCenter">
+				<span><img src="images/index/222_11.png"/></span>
+				<span><img src="images/index/222_13.png"/></span>
+				<span><img src="images/index/222_15.png"/></span>
+				<span><img src="images/index/222_17.png"/></span>
+			</div>
+			<div class="footerLists marginCenter">
+				<dl class="float_left">
+					<dt>购物指南</dt>
+					<dd><a href="">购物流程</a></dd>
+					<dd><a href="">发票制度</a></dd>
+					<dd><a href="">账户管理</a></dd>
+					<dd><a href="">会员优惠</a></dd>
+				</dl>
+				    
+				<dl class="float_left">
+					<dt>支付方式</dt>
+					<dd><a href="">货到付款</a></dd>
+					<dd><a href="">网上支付</a></dd>
+					<dd><a href="">礼品卡支付</a></dd>
+					<dd><a href="">银行转帐</a></dd>
+				</dl>
+				    
+				<dl class="float_left">
+					<dt>订单服务</dt>
+					<dd><a href="">订单配送查询</a></dd>
+					<dd><a href="">订单状态说明</a></dd>
+					<dd><a href="">自助取消订单</a></dd>
+					<dd><a href="">自助修改订单</a></dd>
+				</dl>
+				<dl class="float_left">
+					<dt>退换货</dt>
+					<dd><a href="">退换货政策</a></dd>
+					<dd><a href="">自助申请退换货</a></dd>
+					<dd><a href="">退换货进度查询</a></dd>
+					<dd><a href="">退款方式和时间</a></dd>
+				</dl>
+				<dl class="float_left">
+					<dt>商家服务</dt>
+					<dd><a href="">商家中心</a></dd>
+					<dd><a href="">运营服务</a></dd>
+					<dd><a href="">加入尾品汇</a></dd>
+				</dl>
+			</div>
+			<div class="float_left">
+				<img src="images/logo_00.png"/>
+			</div>
+			<div class="float_clear"></div>
+			<p class="marginCenter margintop30"><span>公司简介</span><span>Investor Relations</span><span>网站联盟</span><span>乐购招商</span><span>机构销售 </span>  手机乐购</p>
+			<p class="textCenter margintop20 box1200" style="font-size: 10px;">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+		</div>
+	
+	</body>
+</html>

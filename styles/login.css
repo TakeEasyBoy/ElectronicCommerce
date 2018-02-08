@@ -1,0 +1,149 @@
+/*欢迎登录*/
+#header .welcom{
+	height: 55px;
+	line-height: 55px;
+	padding-left: 280px;
+	color: #c2c2c2;
+}
+/*登录banner*/
+#loginBanner
+{
+	background-color: #e93854;
+	height: 475px;
+	background-image: url(../images/LoginBannerBG.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	margin-top: 77px;
+}
+
+#taobaoLogin
+{
+	width: 300px;
+    height: 300px;
+    padding: 25px;
+    float: right;
+    background-color: #fef7f6;
+    margin-top: 50px;
+    margin-right: 0px;
+}
+
+#taobaoLogin #userName,#taobaoLogin #passWord
+{
+	width: 298px;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+	border: solid 1px #ddd;
+	text-indent: 50px;
+}
+#taobaoLogin #userLogin{
+	border-bottom: 1px solid #F2F2F2;
+}
+
+#taobaoLogin .imediatReg{
+	border-top: 1px solid #f2f2f2;
+	height: 60px;
+	line-height: 60px;
+}
+#taobaoLogin .imediatReg {
+	background: url(../images/arrow.png) no-repeat;
+	background-position: 95px 23px;
+}
+#taobaoLogin #loginBtn
+{
+	width: 300px;
+	height: 40px;
+	margin: 0px;
+	padding: 0px;
+	border: solid 1px #ff4400;
+	background-color: #ff4400;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 10px;
+	cursor: pointer;
+}
+
+#taobaoLogin .fontBack{
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	width: 40px;
+	height: 40px;
+	background-color: #f3f3f3;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+
+#taobaoLogin p
+{
+	position: relative;
+	margin-top: 10px;
+}
+/*忘记密码的属性*/
+#taobaoLogin p #forgotPsd{
+	margin-left: 148px;
+}
+/*忘记密码的hover属性*/
+#taobaoLogin p #forgotPsd:hover{
+	color: red;
+}
+/*删除图标的样式,定位到*/
+#taobaoLogin #delICON
+{
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	display: none;
+	cursor: pointer;
+}
+#loginBanner #loginTitle
+{
+	border-bottom: solid 1px #F2F2F2;
+}
+
+#loginBanner #loginTitle li
+{
+	height: 36px;
+	width: 149px;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	cursor: pointer;
+}
+
+#loginBanner #loginTitle .current
+{
+	color: #FF6600;
+}
+/*设置二维码和手机的定位属性,同时设置宽高,否则下面的文字位置将会乱*/
+#qrcodeContent .qrcodeContentImgs {
+	position: relative;
+	width: 300px;
+	height: 180px;
+}
+#qrcodeContent .qrcodeContentImgs #qrCodeDetaile{
+	position: absolute;
+	padding: 4px;
+	border: 1px solid #ccc;
+	top: 0px;
+	left: 74px;/*0移动到上面的时候left值为0*/
+}
+#qrcodeContent .qrcodeContentImgs #phone{
+	position: absolute;
+	top: -12px;
+	left: 158px;
+	display: none;
+}
+@font-face{
+	font-family:iconfont;
+	src:url(../taobaoFont/font_1451959379_8626566.eot);src:url(../taobaoFont/font_1451959379_8626566.eot?#iefix) format('embedded-opentype'),url(../taobaoFont/font_1451959379_8626566.woff) format('woff'),url(../taobaoFont/font_1451959379_8626566.ttf) format('truetype'),url(../taobaoFont/font_1451959379_8626566.svg#iconfont) format('svg');
+}
+
+.taobaoFont
+{
+	font-family: "iconfont";
+	font-size: 26px;
+	color: #d5d5d5;
+}

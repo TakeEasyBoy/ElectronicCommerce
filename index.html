@@ -1,0 +1,2749 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>乐购商城</title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/header.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/common.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/slide.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/layerScroll.css"/>
+		<script src="scripts/jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/tyslide.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/OtherEffects.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body style="overflow-x: hidden;">
+		<!--header-->
+		<div class="main_box height28 bg101010">
+			<!--定义版心-->
+			<div id="header" class="box1200 height80 marginCenter">
+				<!--两段话,需要浮动-->
+				<p class="float_left white paddingleft210">legochina.cn</p>
+				<p class="float_right white font14px">欢迎光临<a href="javascript:;" class="colorFF6600">乐购</a>，请 <a href="login.html" class="colorFF6600">登录</a>\<a href="javascript:;" class="colorFF6600">注册</a></p>
+				<div class="float_clear"></div>
+				<!--搜索框+购物车-->
+				<!--logo+搜索框+我的订单-->
+				<!--Logo图片-->
+				<div class="logo">
+					<a href="javascript:;"><img class="float_left" src="images/index/lego_logo.png"/></a>
+				</div>
+				<div class="box1200" id="searchShop">
+					<ul class="float_right" id="shopCart">
+						<li class="current"><a class="white" href="countCenter.html">购物车</a><span>3</span></li>
+						<li>我的订单</li>
+					</ul>
+					<div class="float_right" id="search">
+						<form action="#" method="get">
+							<input class="float_left" type="text" id="keywords" value="" placeholder="创意文具" />
+							<input class="float_left" type="button" id="searchBtn" value="" />
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<!--顶部搜索框-->
+		<div class="main_box" id="topFixSearch">
+			<div class="box1200">
+				<div class="float_left">
+					<img src="images/logo_00.png"/>
+				</div>
+				<div class="float_right" id="newSearch">
+					<!---->
+					<!--<div class="float_right" id="search">
+						<form action="#" method="get">
+							<input class="float_left" type="text" id="keywords" value="" placeholder="创意文具" />
+							<input class="float_left" type="button" id="searchBtn" value="" />
+						</form>
+					</div>-->
+				</div>
+			</div>
+			<div class="float_clear"></div>
+		</div>
+			
+		<!--banner-->
+		<div id="banner" class="box1200 height480">
+			<div id="nav" class="float_left bgFF6600 white font16px textCenter">
+				<span>全部商品分类    ^ </span>
+			</div>
+			<!--菜单栏-->
+			<ul id="subNav" class="float_right font16px fontbold textCenter">
+				<li><a href="javascript:;">图书</a></li>
+				<li><a href="javascript:;">电子书</a></li>
+				<li><a href="javascript:;">原创文学</a></li>
+				<li><a href="javascript:;">服装</a></li>
+				<li><a href="javascript:;">运动户外</a></li>
+				<li><a href="javascript:;">孕婴童</a></li>
+				<li><a href="javascript:;">家居</a></li>
+				<li><a href="javascript:;">创意文具 </a></li>
+				<li><a href="javascript:;">地方特产</a></li>
+				<li><a href="javascript:;">海外购</a></li>
+				<li><a href="javascript:;">电器城</a></li>
+			</ul>
+			<div class="float_clear"></div>
+			<!--左侧主菜单-->
+			<div class="float_left">
+				<div class="floatLeft" id="mainMenu">
+				<ul>
+					<li>
+						<p class="mainMenuText">图书、电子书、童书</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>图书频道</span>
+								<span>邮币商城</span>
+								<span>音像</span>
+								<span>电子书</span>
+								<span>图书榜</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">文艺</p>
+								<p>
+									<span>小说</span>
+									<span>文学</span>
+									<span>青春文学</span>
+									<span>传记</span>
+									<span>动漫</span>
+									<span>艺术</span>
+									<span>摄影</span>
+									<span>书法</span>
+									<span>音乐</span>
+									<span>绘画</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">经管励志</p>
+								<p>
+									<span>管理</span>
+									<span>金融与投资</span>
+									<span>经济</span>
+									<span>励志与成功</span>
+									<span>市场营销</span>
+									<span>股票</span>
+									<span>智能经济</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">人文社科</p>
+								<p>
+									<span>历史</span>
+									<span>心理学</span>
+									<span>政治</span>
+									<span>军事国学</span>
+									<span>古籍哲学</span>
+									<span>社会</span>
+									<span>宗教</span>
+									<span>法律</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">经管</p>
+								<p>
+									<span>成功</span>
+									<span>励志</span>
+									<span>管理</span>
+									<span>投资</span>
+									<span>理财</span>
+									<span>经济</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">生活</p>
+								<p>
+									<span>亲子</span>
+									<span>家教育儿</span>
+									<span>胎教保健</span>
+									<span>地图烹饪</span>
+									<span>美食时尚</span>
+									<span>美妆手工</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">创意文具</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>文创馆</span>
+								<span>艺术品</span>
+								<span>艺术衍生品馆</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">学生文具</p>
+								<p>
+									<span>笔袋</span>
+									<span>文具袋</span>
+									<span>文具盒卷笔刀</span>
+									<span>削笔刀练字帖</span>
+									<span>练字板书皮</span>
+									<span>橡皮泥</span>
+									<span>卡通印泥彩泥</span>
+									<span>修正贴学生用印</span>
+									<span>修正带</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">笔类</p>
+								<p>
+									<span>钢笔签字笔圆珠笔</span>
+									<span>中性笔铅笔记号笔</span>
+									<span>马克笔泡泡笔荧光笔</span>
+									<span>油漆笔正姿笔</span>
+									<span>笔用墨水</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">纸张本册</p>
+								<p>
+									<span>笔记本</span>
+									<span>记事本不干胶标签</span>
+									<span>贴纸包装纸分页纸</span>
+									<span>索引纸复写纸活页替芯课业本</span>
+									<span>草稿纸信纸</span>
+									<span>教学用本日记本书签同学录</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">画具/画材</p>
+								<p>
+									<span>勾线笔水彩笔蜡笔</span>
+									<span>油画棒丙烯颜料</span>
+									<span>水彩颜料水</span>
+									<span>画架绘图</span>
+									<span>白图纸描图</span>
+									<span>文房用品</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">办公用品</p>
+								<p>
+									<span>笔架</span>
+									<span>笔插</span>
+									<span>笔筒档案盒</span>
+									<span>事务包挂快劳夹卡套</span>
+									<span>证件套文件夹</span>
+									<span>笔插</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">服饰、内衣</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>服装馆</span>
+								<span>内衣馆</span>
+								<span>银泰百货</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">女装</p>
+								<p>
+									<span>短袖T恤</span>
+									<span>连衣裙半身裙</span>
+									<span>衫短裤牛仔裤</span>
+									<span>休闲裤</span>
+									<span>亲子装</span>
+									<span>真丝夹克</span>
+									<span>风衣套装</span>
+									<span>中老年服装</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">鞋靴、箱包</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>4000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">运动户外</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>5000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">孕、婴、童</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>6000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">家居、家纺、汽车</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>7000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">家居、家装、康体</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>8000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">美妆、个人护理、成人</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>9000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">食品、茶酒、生鲜</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>1010100主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">腕表、珠宝、眼镜</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>1100000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">手机、数码</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>1200000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">电脑办公</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>1300000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+					
+					<li>
+						<p class="mainMenuText">家用电器</p>
+						<div class="subMenu">
+							<div class="topSubMenu">
+								<span>140000主菜单1</span>
+								<span>主菜单2</span>
+								<span>主菜单3</span>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题1</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+									<span>三级分类7</span>
+									<span>三级分类8</span>
+									<span>三级分类9</span>
+									<span>三级分类10</span>
+									<span>三级分类11</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题2</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题3</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题4</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+							<div class="SingelSubMenu">
+								<p class="subMenuTitle">二级分类标题5</p>
+								<p>
+									<span>三级分类1</span>
+									<span>三级分类2</span>
+									<span>三级分类3</span>
+									<span>三级分类4</span>
+									<span>三级分类5</span>
+									<span>三级分类6</span>
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			</div>
+			<!--右侧banner滚动-->
+			<div class="float_right">
+				<div class="pptbox" id="bannerPlay">
+					<ul class="innerwrapper">
+						<li><a href="javascript:;"><img src="images/banner1.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner2.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner3.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner4.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner5.jpg"/></a></li>
+						<li><a href="javascript:;"><img src="images/banner1.jpg"/></a></li>
+					</ul>
+					<ul class="controls">
+						<li class="current"><span>1</span></li>
+						<li><span>2</span></li>
+						<li><span>3</span></li>
+						<li><span>4</span></li>
+						<li><span>5</span></li>
+						<li><span>6</span></li>
+					</ul>			
+					<span class="btnleft"></span>
+					<span class="btnright"></span>
+				</div>
+			</div>
+		</div>
+		<!--今日推荐-->
+		<div id="recommend" class="floor box1200 margintop50">
+			<div class="contentTitle box1200">
+				<p class="colorFF6600 contentTitle font20px textIndent10">乐购·今日推荐</p>
+			</div>
+			<!--图文详情第一排-->
+			<!--图文详情1-->
+			<div class="borderleft">
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_05.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">黑爵青蜂侠六键电竞游戏鼠标</a></p>
+					<p class="font14px">全国联保 一年免费包换</p>
+					<p class="price">￥:299</p>
+				</div>
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_05.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">黑爵青蜂侠六键电竞游戏鼠标</a></p>
+					<p class="font14px">全国联保 一年免费包换</p>
+					<p class="price">￥:299</p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_05.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">黑爵青蜂侠六键电竞游戏鼠标</a></p>
+					<p class="font14px">全国联保 一年免费包换</p>
+					<p class="price">￥:299</p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_05.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">黑爵青蜂侠六键电竞游戏鼠标</a></p>
+					<p class="font14px">全国联保 一年免费包换</p>
+					<p class="price">￥:299</p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_05.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">黑爵青蜂侠六键电竞游戏鼠标</a></p>
+					<p class="font14px">全国联保 一年免费包换</p>
+					<p class="price">￥:299</p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_05.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">黑爵青蜂侠六键电竞游戏鼠标</a></p>
+					<p class="font14px">全国联保 一年免费包换</p>
+					<p class="price">￥:299</p>
+				</div>
+				<div class="float_clear"></div>
+				<!--第一排结束-->
+				<!--第二排-->
+				<!--图文详情1-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_11.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">小熊家用静音加湿器</a></p>
+					<p class="font14px">唯美外观 微米级喷雾</p>
+					<p class="price">￥:89</p>
+				</div>
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_11.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">小熊家用静音加湿器</a></p>
+					<p class="font14px">唯美外观 微米级喷雾</p>
+					<p class="price">￥:89</p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_11.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">小熊家用静音加湿器</a></p>
+					<p class="font14px">唯美外观 微米级喷雾</p>
+					<p class="price">￥:89</p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_11.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">小熊家用静音加湿器</a></p>
+					<p class="font14px">唯美外观 微米级喷雾</p>
+					<p class="price">￥:89</p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_11.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">小熊家用静音加湿器</a></p>
+					<p class="font14px">唯美外观 微米级喷雾</p>
+					<p class="price">￥:89</p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/index/index06_11.jpg"/></a></div>
+					<div><img src="images/index/index05_18.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">小熊家用静音加湿器</a></p>
+					<p class="font14px">唯美外观 微米级喷雾</p>
+					<p class="price">￥:89</p>
+				</div>
+				<div class="float_clear"></div>
+			<!--第二排结束-->
+			</div>
+		</div>
+		<!--今日推荐结束-->
+			
+		<!--电子书-->
+		<div id="ebook" class="floor box1200 margintop30">
+			<div class="contentTitle width900">
+				<p class="font22px float_left">图书&emsp;电子书</p>
+				<!--复制后需要更改lists的m名字-->
+				<ul class="float_right" id="ebookLists">
+					<li class="current">新书上架</li>
+					<li>独家畅销</li>
+					<li>电子书</li>
+				</ul>
+				<div class="float_clear"></div>
+			</div>
+			<!--电子书左侧-->
+			<div class="float_left left">
+				<!--图片-->
+				<div>
+					<img src="images/index/index7_07.jpg"/>
+				</div>
+				<!--文字链接-->
+				<ul class="paddingtop20">
+					<li><a href="">中小学教辅</a></li>
+					<li><a href="">外语</a></li>
+					<li><a href="">考试</a></li>
+				
+					<li><a href="">小说</a></li>
+					<li><a href="">文学</a></li>
+					<li><a href="">青春文学</a></li>
+				
+					<li><a href="">成功\励志</a></li>
+					<li><a href="">管理</a></li>
+					<li><a href="">历史</a></li>
+				
+					<li><a href="">哲学\宗教</a></li>
+					<li><a href="">亲子\家教</a></li>
+					<li><a href="">全部分类></a></li>
+				</ul>
+				<!--清除浮动-->
+				<div class="float_clear"></div>
+			</div>
+			<!--电子书中间部分,引用轮播插件-->
+			<div id="ebookCenters">
+				<div class="float_left  center" style="display: block;">
+					<!--轮播插件-->
+					<div class="float_left" >
+						<div class="pptbox" id="ebookBanner">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<!--banner图旁边的图书-->
+					<div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+					</div>
+					<div class="float_clear"></div>
+					<!--电子书的第二排-->
+					<div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+					</div>
+					<div class="float_clear"></div>
+				</div>
+				<div class="float_left  center" >
+					<!--轮播插件-->
+					<div class="float_left" >
+						<div class="pptbox" id="ebookBanner2">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<!--banner图旁边的图书-->
+					<div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢2000</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+					</div>
+					<div class="float_clear"></div>
+					<!--电子书的第二排-->
+					<div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+					</div>
+					<div class="float_clear"></div>
+				</div>
+				<div class="float_left  center" >
+					<!--轮播插件-->
+					<div class="float_left" >
+						<div class="pptbox" id="ebookBanner3">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/ppt2_05.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<!--banner图旁边的图书-->
+					<div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢3000</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+					</div>
+					<div class="float_clear"></div>
+					<!--电子书的第二排-->
+					<div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+						<div class="float_left content">
+							<p class="font16px">奥运狂欢</p>
+							<p class="colorF91616">10万种电子书  直降41%</p>
+							<a href=""><img src="images/index/index09_05.jpg"/></a>
+							<p class="font14px">&nbsp;¥49&emsp;<span>¥79</span></p>
+						</div>
+					</div>
+					<div class="float_clear"></div>
+				</div>
+			</div>
+				
+			<!--电子书中间部分,需要有滑动切换的效果-->
+			<div class="float_right ebookright">
+				<p class="font18px color939393 textCenter">新书畅销榜</p>
+				<ul>
+					<li>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">1</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">1</span>
+							<span>就喜欢你看不惯我</span>
+							<span>作者</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">2</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">2</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">3</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">3</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">4</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">4</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">5</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">5</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">6</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">6</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+					<li>
+						<div class="ebookRightImgText">
+							<span class="colorF91616">7</span>
+							<span><a href="#"><img src="images/index/index08_05.jpg"/></a></span>
+							<span class="ebookText">从你的世界路过入选央视“2014中国好书”的80后作品！十年华语畅销小说,王家卫陈国富倾力推荐,15万次转发,超4亿次</span>
+							<div class="float_clear"></div>
+						</div>
+						<div class="disYes ebookRightImgText">
+							<span class="colorF91616">7</span>
+							<span>就喜欢你看不惯我</span>
+							<span>又干不掉我的样子</span>
+							<div class="float_clear"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		<!--清除浮动-->
+		<div class="float_clear"></div>
+		<!--服装-->
+		<div id="clothing" class="floor box1200 margintop30">
+			<!--标题-->
+			<div class="contentTitle box1200">
+				<p class="font22px float_left">服装</p>
+				<!--复制后需要更改lists的值-->
+				<ul class="float_right" id="clothingLists">
+					<li class="current">女装内衣</li>
+					<li>热销男装</li>
+					<li>精品鞋靴</li>
+				</ul>
+				<div class="float_clear"></div>
+			</div>
+			<!--标题结束-->
+			<!--服装左边-->
+			<div class="float_left left">
+				<!--图片-->
+				<div>
+					<img src="images/index/index7_17.jpg"/>
+				</div>
+				<!--文字链接-->
+				<ul class="paddingtop20">
+					<li><a href="">女包</a></li>
+					<li><a href="">防晒品</a></li>
+					<li><a href="">短裤</a></li>
+				
+					<li><a href="">冰丝内裤</a></li>
+					<li><a href="">男包</a></li>
+					<li><a href="">功能箱包</a></li>
+				
+					<li><a href="">蕾丝衬衫</a></li>
+					<li><a href="">奢侈品</a></li>
+					<li><a href="">男鞋</a></li>
+				
+					<li><a href="">女包</a></li>
+					<li><a href="">女鞋 </a></li>
+					<li><a href="">全部分类></a></li>
+				</ul>
+				<!--清除浮动-->
+				<div class="float_clear"></div>
+			</div>
+			<!--中间部分-->
+			<div class="clothingCenters" style="display: block;">
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="clothingBanner">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/index10.png"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_02.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_03.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右侧部分-->
+				<div class="float_left right">
+					<div class="float_left">
+						<div class="">
+							<p>达芙妮</p>
+							<p>夏季凉鞋清仓</p>
+							<p class="offsale white"><a href="">领<span>100</span>元优惠券</a></p>
+							<img src="images/index/index11_05.png"/>
+						</div>
+						<div class="">
+							<p>郝秦 暑假清凉记</p>
+							<p class="color939393">满<span>669</span>减<span>250</span></p>
+							<img src="images/index/lego_home_18.png"/>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>达芙妮</p>
+							<p>夏季凉鞋清仓</p>
+							<p class="offsale white"><a href="">领<span>50</span>元优惠券</a></p>
+							<img src="images/index/index11_05.png"/>
+						</div>
+						<div class="">
+							<p>郝秦 暑假清凉记</p>
+							<p class="color939393">满<span>299</span>减<span>50</span></p>
+							<img src="images/index/lego_home_18.png"/>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>达芙妮</p>
+							<p>夏季凉鞋清仓</p>
+							<p class="offsale white"><a href="">领<span>30</span>元优惠券</a></p>
+							<img src="images/index/index11_05.png"/>
+						</div>
+						<div class="">
+							<p>郝秦 暑假清凉记</p>
+							<p class="color939393">满<span>599</span>减<span>300</span></p>
+							<img src="images/index/lego_home_18.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clothingCenters">
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="clothingBanner1">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/index10.png"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_02.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_03.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右侧部分-->
+				<div class="float_left right">
+				<div class="float_left">
+					<div class="">
+						<p>达芙妮100</p>
+						<p>夏季凉鞋清仓</p>
+						<p class="offsale white"><a href="">领<span>100</span>元优惠券</a></p>
+						<img src="images/index/index11_05.png"/>
+					</div>
+					<div class="">
+						<p>郝秦 暑假清凉记</p>
+						<p class="color939393">满<span>669</span>减<span>250</span></p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>达芙妮</p>
+						<p>夏季凉鞋清仓</p>
+						<p class="offsale white"><a href="">领<span>50</span>元优惠券</a></p>
+						<img src="images/index/index11_05.png"/>
+					</div>
+					<div class="">
+						<p>郝秦 暑假清凉记</p>
+						<p class="color939393">满<span>299</span>减<span>50</span></p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>达芙妮</p>
+						<p>夏季凉鞋清仓</p>
+						<p class="offsale white"><a href="">领<span>30</span>元优惠券</a></p>
+						<img src="images/index/index11_05.png"/>
+					</div>
+					<div class="">
+						<p>郝秦 暑假清凉记</p>
+						<p class="color939393">满<span>599</span>减<span>300</span></p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+			</div>
+			</div>	
+			<div class="clothingCenters">
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="clothingBanner2">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/index10.png"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_02.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/index10_03.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右侧部分-->
+				<div class="float_left right">
+				<div class="float_left">
+					<div class="">
+						<p>青钢影</p>
+						<p>夏季拖鞋清仓</p>
+						<p class="offsale white"><a href="">领<span>100</span>元优惠券</a></p>
+						<img src="images/index/index11_05.png"/>
+					</div>
+					<div class="">
+						<p>郝秦 暑假清凉记</p>
+						<p class="color939393">满<span>669</span>减<span>250</span></p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>达芙妮</p>
+						<p>夏季凉鞋清仓</p>
+						<p class="offsale white"><a href="">领<span>50</span>元优惠券</a></p>
+						<img src="images/index/index11_05.png"/>
+					</div>
+					<div class="">
+						<p>郝秦 暑假清凉记</p>
+						<p class="color939393">满<span>299</span>减<span>50</span></p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>达芙妮</p>
+						<p>夏季凉鞋清仓</p>
+						<p class="offsale white"><a href="">领<span>30</span>元优惠券</a></p>
+						<img src="images/index/index11_05.png"/>
+					</div>
+					<div class="">
+						<p>郝秦 暑假清凉记</p>
+						<p class="color939393">满<span>599</span>减<span>300</span></p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+			</div>
+			</div>
+				
+			<!--底部logo部分-->
+			<div class="float_clear"></div>
+			<ul class="logoLists box1200">
+				<li><a href=""><img src="images/index/clothingLogo00.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo01.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo02.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo03.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo04.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo05.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo06.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo07.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo08.jpg"/></a></li>
+				<li><a href=""><img src="images/index/clothingLogo00.jpg"/></a></li>
+			</ul>
+			<div class="float_clear"></div>
+		</div>
+		<!--服装结束-->
+			
+		<!--户外-->
+		<div id="outdoors" class="floor box1200 margintop30">
+			<!--标题-->
+			<div class="contentTitle box1200">
+				<p class="font22px float_left">户外运动</p>
+				<!--复制后需要更改lists的值-->
+				<ul class="float_right" id="outdoorLists">
+					<li class="current">国际名品</li>
+					<li>户外装备</li>
+					<li>运动潮流</li>
+				</ul>
+				<div class="float_clear"></div>
+			</div>
+			<!--标题结束-->
+			<!--服装左边-->
+			<div class="float_left left">
+				<!--图片-->
+				<div>
+					<img src="images/index/outdoors.jpg"/>
+				</div>
+				<!--文字链接-->
+				<ul class="paddingtop20">
+					<li><a href="">女包</a></li>
+					<li><a href="">防晒品</a></li>
+					<li><a href="">短裤</a></li>
+				
+					<li><a href="">冰丝内裤</a></li>
+					<li><a href="">男包</a></li>
+					<li><a href="">功能箱包</a></li>
+				
+					<li><a href="">蕾丝衬衫</a></li>
+					<li><a href="">奢侈品</a></li>
+					<li><a href="">男鞋</a></li>
+				
+					<li><a href="">女包</a></li>
+					<li><a href="">女鞋 </a></li>
+					<li><a href="">全部分类></a></li>
+				</ul>
+				<!--清除浮动-->
+				<div class="float_clear"></div>
+			</div>
+			
+			<!--中间部分-->
+			<div class="outdoorCenters" style="display: block;">
+				<!--中间-->
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="outdoorsBanner">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/outdoor01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor02.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor03.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor04.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="float_left right">
+					<div class="float_left">
+						<div class="">
+							<p>李宁111</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>李宁</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>李宁</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="outdoorCenters">
+				<!--中间-->
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="outdoorsBanner1">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/outdoor01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor02.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor03.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor04.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="float_left right">
+					<div class="float_left">
+						<div class="">
+							<p>李宁222</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>李宁</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>李宁</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="outdoorCenters">
+				<!--中间-->
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="outdoorsBanner2">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/outdoor01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor02.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor03.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/outdoor04.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右边-->
+				<div class="float_left right">
+					<div class="float_left">
+						<div class="">
+							<p>李宁333</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>599</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>李宁</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+					<div class="float_left">
+						<div class="">
+							<p>李宁</p>
+							<p>时尚酷炫泳镜</p>
+							<p class="offsale white">满<span>299</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor06.jpg"/></a>
+						</div>
+						<div class="">
+							<p>古星 纯棉运动裤</p>
+							<p class="color939393">满<span>498</span>减<span>50</span></p>
+							<a href="#"><img src="images/index/outdoor05.jpg"/></a>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!--中间部分-->	
+			<div class="float_clear"></div>
+			<!--底部logo部分-->
+			<ul class="logoLists">
+				<li><a href=""><img src="images/index/outdoorLogo00.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo01.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo02.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo03.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo04.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo05.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo06.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo07.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo08.jpg"/></a></li>
+				<li><a href=""><img src="images/index/outdoorLogo09.jpg"/></a></li>
+			</ul>
+			<div class="float_clear"></div>
+		</div>
+		<!--户外结束-->
+			
+		<!--童装-->
+		<div id="children" class="floor box1200 margintop30">
+			<!--标题-->
+			<div class="contentTitle box1200">
+				<p class="font22px float_left">儿童&emsp;童鞋 婴儿装</p>
+				<!--复制后需要更改lists的值-->
+				<ul class="float_right" id="childrenLists">
+					<li class="current">儿童服装</li>
+					<li>婴儿装</li>
+					<li>小潮童鞋</li>
+				</ul>
+				<div class="float_clear"></div>
+			</div>
+			<!--标题结束-->
+			<!--服装左边-->
+			<div class="float_left left">
+				<!--图片-->
+				<div>
+					<a href=""><img src="images/index/childerindex.jpg"/></a>
+				</div>
+				<!--文字链接-->
+				<ul class="paddingtop20">
+					<li><a href="">女包</a></li>
+					<li><a href="">防晒品</a></li>
+					<li><a href="">短裤</a></li>
+				
+					<li><a href="">冰丝内裤</a></li>
+					<li><a href="">男包</a></li>
+					<li><a href="">功能箱包</a></li>
+				
+					<li><a href="">蕾丝衬衫</a></li>
+					<li><a href="">奢侈品</a></li>
+					<li><a href="">男鞋</a></li>
+				
+					<li><a href="">女包</a></li>
+					<li><a href="">女鞋 </a></li>
+					<li><a href="">全部分类></a></li>
+				</ul>
+				<!--清除浮动-->
+				<div class="float_clear"></div>
+			</div>
+			<!--童装分页1-->
+			<div class="childrenCenters" style="display: block;">
+			<!--中间部分-->
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="childrenBanner">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/childerbanner00.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner03.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner04.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右边部分-->
+				<div class="float_left right">
+				<div class="float_left">
+					<div class="">
+						<p>笛莎</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>笛莎</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>笛莎</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+			</div>
+			</div>	
+			<!--童装分页2-->
+			<div class="childrenCenters">
+				<!--中间部分-->
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="childrenBanner1">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/childerbanner00.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner03.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner04.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右边部分-->
+				<div class="float_left right">
+				<div class="float_left">
+					<div class="">
+						<p>笛莎</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>笛莎</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装110</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>笛莎13123</p>
+						<p>夏清仓699元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+			</div>
+			</div>	
+			<!--童装分页3-->
+			<div class="childrenCenters">
+			<!--中间部分-->
+				<div class="float_left center">
+					<div class="float_left" >
+						<div class="pptbox" id="childrenBanner2">
+							<ul class="innerwrapper">
+								<li><a href="javascript:;"><img src="images/index/childerbanner00.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner01.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner03.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="images/index/childerbanner04.jpg"/></a></li>
+							</ul>
+							<ul class="controls">
+								<li class="current"><span>1</span></li>
+								<li><span>2</span></li>
+								<li><span>3</span></li>
+								<li><span>4</span></li>
+							</ul>			
+							<span class="btnleft"></span>
+							<span class="btnright"></span>
+						</div>
+					</div>
+					<div class="">
+						<a href=""><img src="images/index/index11_08.jpg"/></a>
+					</div>
+				</div>
+				<!--右边部分-->
+				<div class="float_left right">
+				<div class="float_left">
+					<div class="">
+						<p>笛莎222222</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>笛莎</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+				<div class="float_left">
+					<div class="">
+						<p>笛莎</p>
+						<p>夏清仓6.9元起</p>
+						<p class="offsale white">满199减10</p>
+						<a href=""><img src="images/index/childrenlist.jpg"/></a>
+					</div>
+					<div class="">
+						<p>贝康馨童装</p>
+						<p class="color939393">童裙清仓倒计时</p>
+						<img src="images/index/lego_home_18.png"/>
+					</div>
+				</div>
+			</div>
+			</div>	
+			
+			<div class="float_clear"></div>
+		</div>
+		<!--童装结束-->
+			
+		<!--家具-->
+		<div id="furnishing" class="floor box1200 margintop30">
+			<!--title-->
+			<div class="contentTitle width1200">
+				<p class="font22px float_left">家具日用</p>
+			</div>
+			<!--conten  leftt-->
+			<div class="float_left textCenter furnishindex">
+				<a href="#"><img src="images/index/furnishingindex.png"/></a>
+			</div>
+			<!--content right-->
+			<!--第一列-->
+			<div class="float_left">
+				<div class="furnishingListsTop textCenter">
+					<a href="#"><img src="images/index/furnishinglist.jpg"/></a>
+					<p class="colorF91616">自营风扇低至33元</p>
+				</div>
+				<div class="furnishingListsBottom textCenter">
+					<p>自营家具满额减</p>
+					<p>爆款低至25元</p>
+					<p class="colorF91616">满250减50</p>
+					<a href="#"><img src="images/index/furnishinglist01.jpg"/></a>
+				</div>
+			</div>
+			<!--第二列-->
+			<div class="float_left">
+				
+				<div class="furnishingListsTop textCenter">
+					<a href="#"><img src="images/index/furnishinglist.jpg"/></a>
+					<p class="colorF91616">自营风扇低至29元</p>
+				</div>
+				<div class="furnishingListsBottom textCenter">
+					<p>自营家具满额减</p>
+					<p>爆款低至35元</p>
+					<p class="colorF91616">满250减50</p>
+					<a href="#"><img src="images/index/furnishinglist01.jpg"/></a>
+				</div>
+			</div>
+			<!--第三列-->
+			<div class="float_left">
+				<div class="furnishingListsTop textCenter">
+					<a href="#"><img src="images/index/furnishinglist.jpg"/></a>
+					<p class="colorF91616">自营风扇低至19元</p>
+				</div>
+				<div class="furnishingListsBottom textCenter">
+					<p>自营家具满额减</p>
+					<p>爆款低至10元</p>
+					<p class="colorF91616">满500减500</p>
+					<a href="#"><img src="images/index/furnishinglist01.jpg"/></a>
+				</div>
+			</div>
+			<!--第四列-->
+			<div class="float_left">
+				<div class="furnishingListsTop textCenter">
+					<a href="#"><img src="images/index/furnishinglist.jpg"/></a>
+					<p class="colorF91616">自营风扇低至79元</p>
+				</div>
+				<div class="furnishingListsBottom textCenter">
+					<p>自营家具满额减</p>
+					<p>爆款低至25元</p>
+					<p class="colorF91616">满250减500</p>
+					<a href="#"><img src="images/index/furnishinglist01.jpg"/></a>
+				</div>
+			</div>
+			<div class="float_clear"></div>
+		</div>
+		<!--家具结束-->
+			
+		<!--推广-->
+		<div id="popularity" class="floor box1200 marginCenter margintop30">
+			<!--两个小圆图标,使用定位,定位到上面-->
+			<ul class="float_right" id="popularityTab">
+				<li class="current">●</li>
+				<li>●</li>
+				<li>●</li>
+				<div class="float_clear"></div>
+			</ul>
+			<!--标题-->
+			<div class="contentTitle box1200">
+				<p class="font22px">推广</p>
+			</div>
+			<div id="popularityContents">
+				<!--第1页-->
+				<div class="popularityPages float_left">
+					<div class="box1200 marginleft10px">
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>111Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="float_clear"></div>
+					</div>
+					<div class="box1200 marginleft10px">
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="float_clear"></div>
+					</div>
+				</div>
+				<!--第2页-->
+				<div class="popularityPages float_left">
+					<div class="box1200 marginleft10px">
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>q222Pigeon中国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;289</span>
+							<p class="comments"><a href="">已有1988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>就喜欢你，看不惯我</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>却又干不掉我的样子</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="float_clear"></div>
+					</div>
+					<div class="box1200 marginleft10px">
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="float_clear"></div>
+					</div>
+				</div>
+				<!--第3页-->
+				<div class="popularityPages float_left">
+					<div class="box1200 marginleft10px">
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>333Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="float_clear"></div>
+					</div>
+					<div class="box1200 marginleft10px">
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="popularityContent float_left">
+							<p><img src="images/index/index25_12.jpg"/></p>
+							<p>Pigeon法国制奶嘴，无毒天然乳胶</p>
+							<span class="price">&yen;189</span>
+							<p class="comments"><a href="">已有988条评价</a></p>
+							<div class="bitBackPic msgIcon"></div>
+						</div>
+						<div class="float_clear"></div>
+					</div>
+				</div>
+				<div class="float_clear"></div>
+			</div>
+			<div class="float_clear"></div>
+		</div>
+		<div class="float_clear"></div>
+		<!--footer-->
+		<div class="main_box margintop30" id="footer">
+			<div class="footerPics box1200 marginCenter">
+				<span><img src="images/index/222_11.png"/></span>
+				<span><img src="images/index/222_13.png"/></span>
+				<span><img src="images/index/222_15.png"/></span>
+				<span><img src="images/index/222_17.png"/></span>
+			</div>
+			<div class="footerLists marginCenter">
+				<dl class="float_left">
+					<dt>购物指南</dt>
+					<dd><a href="">购物流程</a></dd>
+					<dd><a href="">发票制度</a></dd>
+					<dd><a href="">账户管理</a></dd>
+					<dd><a href="">会员优惠</a></dd>
+				</dl>
+				    
+				<dl class="float_left">
+					<dt>支付方式</dt>
+					<dd><a href="">货到付款</a></dd>
+					<dd><a href="">网上支付</a></dd>
+					<dd><a href="">礼品卡支付</a></dd>
+					<dd><a href="">银行转帐</a></dd>
+				</dl>
+				    
+				<dl class="float_left">
+					<dt>订单服务</dt>
+					<dd><a href="">订单配送查询</a></dd>
+					<dd><a href="">订单状态说明</a></dd>
+					<dd><a href="">自助取消订单</a></dd>
+					<dd><a href="">自助修改订单</a></dd>
+				</dl>
+				<dl class="float_left">
+					<dt>退换货</dt>
+					<dd><a href="">退换货政策</a></dd>
+					<dd><a href="">自助申请退换货</a></dd>
+					<dd><a href="">退换货进度查询</a></dd>
+					<dd><a href="">退款方式和时间</a></dd>
+				</dl>
+				<dl class="float_left">
+					<dt>商家服务</dt>
+					<dd><a href="">商家中心</a></dd>
+					<dd><a href="">运营服务</a></dd>
+					<dd><a href="">加入尾品汇</a></dd>
+				</dl>
+			</div>
+			<div class="float_left">
+				<img src="images/logo_00.png"/>
+			</div>
+			<div class="float_clear"></div>
+			<p class="marginCenter margintop30"><span>公司简介</span><span>Investor Relations</span><span>网站联盟</span><span>乐购招商</span><span>机构销售 </span>  手机乐购</p>
+			<p class="textCenter margintop20 box1200" style="font-size: 10px;">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+		</div>
+		<!--楼梯滚动特效-->
+		<!--每个楼层需要定义一个class用于楼层滚动的定位,通过js查找相同属性的类,在通过对应图标的索引然后定位到对应楼层-->
+		<!---->
+		<ul id="layerScroll">
+			<li>推荐</li>
+			<li class="icon2">图书</li>
+			<li class="icon3">服装</li>
+			<li class="icon4">运动</li>
+			<li class="icon5">童装</li>
+			<li class="icon6">家居</li>
+			<li class="icon7">推广</li>
+			<li class="icon8">返回</li>
+		</ul>
+		
+		<ul id="sidebar">
+			<li style="height: 40px;"><img src="images/two_30.jpg"/></li>
+			<li id="QrCode"><img class="float_left" src="images/two_31.jpg"/><img id="QrCodeICON" class="float_left" src="images/two_33.jpg"/></li>
+			<li><img src="images/two_32.jpg"/><span>10</span></li>
+		</ul>
+		
+		
+		
+	</body>
+</html>

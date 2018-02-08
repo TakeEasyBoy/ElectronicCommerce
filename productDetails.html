@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>乐购·产品详情</title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/header.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/common.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/productDetailes.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/Zoom.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+		<script src="scripts/jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/bookDetails.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body style="overflow-x: hidden;">
+		<!--header-->
+		<div class="main_box  height28 bg101010">
+			<!--定义版心-->
+			<div id="header" class="box1200 height80 marginCenter">
+				<!--两段话,需要浮动-->
+				<p class="float_left white paddingleft210">legochina.cn</p>
+				<p class="float_right white font14px">欢迎光临<a href="index.html" class="colorFF6600">乐购</a>，请 <a href="javascript:;" class="colorFF6600">登录</a>\<a href="javascript:;" class="colorFF6600">注册</a></p>
+				<div class="float_clear"></div>
+				<!--搜索框+购物车-->
+				<!--logo+搜索框+我的订单-->
+				<div class="logo">
+					<!--Logo图片-->
+					<a href="javascript:;"><img class="float_left" src="images/products/logo_read.jpg"/></a>
+				</div>
+				<div class="box1200" id="searchShop">
+					<ul class="float_right" id="shopCart">
+						<li class="current">购物车 <span>3</span></li>
+						<li>我的订单</li>
+					</ul>
+					<div class="float_right" id="search">
+						<form action="#" method="get">
+							<input class="float_left" type="text" id="keywords" value="" placeholder="创意文具" />
+							<input class="float_left" type="button" id="searchBtn" value="" />
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="float_clear"></div>
+		
+		<!--菜单-->
+		<div id="banner" class="box1200 height50 margintop50">
+			<div id="nav" class="float_left bg93D46F white font16px textCenter">
+				<span>全部商品分类    ^ </span>
+			</div>
+			<!--菜单栏-->
+			<ul id="subNav" class="float_right font16px fontbold textCenter">
+				<li><a href="javascript:;">图书</a></li>
+				<li><a href="javascript:;">电子书</a></li>
+				<li><a href="javascript:;">原创文学</a></li>
+				<li><a href="javascript:;">服装</a></li>
+				<li><a href="javascript:;">运动户外</a></li>
+				<li><a href="javascript:;">孕婴童</a></li>
+				<li><a href="javascript:;">家居</a></li>
+				<li><a href="javascript:;">创意文具 </a></li>
+				<li><a href="javascript:;">地方特产</a></li>
+				<li><a href="javascript:;">海外购</a></li>
+				<li><a href="javascript:;">电器城</a></li>
+			</ul>
+			<div class="float_clear"></div>
+		</div>
+		<!--商品详情,包括加入购物车,选择类型.....-->
+		<div id="productDetailes" class="main_box height600 bgF2F2F2">
+			<div class="box1200">
+				<p class="title"><span class="font24px">图书</span><span>&gt;小说</span><span>&gt;情感/家庭/婚姻</span><span>&gt;博集天卷</span><span>&gt;他和她</span></p>
+			</div>
+			<div class="box1200 height512 bgwhite" id="detailes">
+				<!--放大界面 插件实现-->
+				<div class="zoomArea height512 float_left">
+					<div id="showbox">
+						<img src="images/001.jpg" width="340" height="350" />
+						<img src="images/001.jpg" width="340" height="350" />
+						<img src="images/001.jpg" width="340" height="350" />
+						<img src="images/001.jpg" width="340" height="350" />
+						<img src="images/001.jpg" width="340" height="350" />
+						<img src="images/001.jpg" width="340" height="350" />
+						<img src="images/001.jpg" width="340" height="350" />
+						<img src="images/001.jpg" width="340" height="350" />
+					</div><!--展示图片盒子-->
+					<div id="showsum"></div><!--展示图片里边-->
+					<p class="showpage">
+					  <a href="javascript:void(0);" id="showlast"> &lt; </a>
+					  <a href="javascript:void(0);" id="shownext"> &gt; </a>
+					</p>
+					<p class="textCenter font14px margintop10">商品编号9527</p>
+					<div class="float_clear"></div>
+				</div>
+				<!--商品的详情-->
+				<div id="textDetailes" class="float_left width800 height512 marginleft20px">
+					<p class="font20px fontbold paddingtop20">他与她</p>
+					<p class="colorF91616 font16px">《偷影子的人》作者马克·李维重磅新作，法国连续60周在榜，销量突破120万册 </p>
+					<p class="font14px">[法] 马克·李维 著；杨亦雨 译</p>
+					<div class="priceDetailes width800">
+						<div class="float_left left margintop10 font14px">
+							<p>乐  购  价：<span class="font16px colorF91616">￥26.20</span> [6.9折] [定价:<span class="delPrice">￥38.00</span>] (<a href="">降价通知</a>) </p>
+							<p>促销信息：<span class="colorF91616">满减 每满150.00元，可减50.00元现金</span></p>
+							<p>领券<span class="discoutBack white discount marginleft10pxl">100-6</span>  <span class="discoutBack white discount">100-20</span></p>
+						</div>
+						<div class="float_right right font14px">
+							<p>累计评价</p>
+							<p class="colorFF6600"><span>9999</span></p>
+						</div>
+					</div>
+					<div class="float_clear"></div>
+					<p class="float_left margintop10 font16px">
+						<span>种类选择:</span>
+					</p>
+					<div class="float_left categeCheck font14px margintop10">
+						<p class="current">平装版</p>
+						<p>精装版</p>
+						<p>精装平装版</p>
+						<p>纪念版</p>
+						<p>青铜纪念版</p>
+						<p>黄金纪念版</p>
+						<p>铂金纪念版</p>
+						<p>钻石纪念版</p>
+						<p>精装纪念版</p>
+						<div class="float_clear"></div>
+					</div>
+					<div class="float_clear"></div>
+					<!--添加购物车的数量,以及加入购物车的按钮-->
+					<div class="addToCart">
+						<ul class="buyNumCon textCenter marginleft20px margintop20">
+		    				<li class="minus">-</li>
+		    				<li class="buyNumInput"><input class="buyNumInput buyNumber" type="text" name="buyNum" value="1" /></li>
+		    				<li class="plus">+</li>
+		    			</ul>
+						<input type="button" name="addCartBtn" id="addCartBtn" value="加入购物车" />
+					</div>
+					<div class="float_clear"></div>
+					<p class="paddingtop10">温馨提示,支持7天无理由退换货</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--人气单品-->
+		<div id="popSingleProduct" class="box1200 margintop50">
+			<div class="contentTitle box1200">
+				<p class="font22px float_left white bgFF6600 textIndent10">人气单品</p>
+				<!--复制后需要更改lists的m名字-->
+			</div>
+			<!--图文详情第一排-->
+			<!--图文详情1-->
+			<div class="borderleft">
+				<!--图文详情2-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book08.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术</a></p>
+					<p class=" star star10">推荐:</p>
+					<p class="price2">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<!--图文详情3-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book16.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">梦的解析</a></p>
+					<p class=" star star9">推荐:</p>
+					<p class="price2">&yen;:29<span class="delPrice">&yen;58</span></p>
+				</div>
+				<!--图文详情4-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book17.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">平凡的世界 路遥</a></p>
+					<p class=" star star8">推荐:</p>
+					<p class="price2">&yen;:39 <span class="delPrice">&yen;58</span></p>
+				</div>
+				<!--图文详情5-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book18.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">规矩和爱</a></p>
+					<p class=" star star7">推荐:</p>
+					<p class="price2">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<!--图文详情6-->
+				<div class="content float_left">
+					<div class="textCenter"><a href=""><img src="images/products/book19.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">繁花 东野圭吾</a></p>
+					<p class=" star star6">推荐:</p>
+					<p class="price2">&yen;:9.9<span class="delPrice">&yen;58</span></p>
+				</div>
+				<div class="float_clear"></div>
+			</div>
+		</div>
+      
+		<!--底部评论区和看了又看 分左右结构来做-->
+		
+		<div class="box1200 margintop50 marginbottom50" id="commentsArea">
+			<!--左侧的看了又看-->
+			<div class="leftArea float_left box190 marginleft10px">
+				<p class="font16px bgF2F2F2">看了又看</p>
+				<!--图文详情2-->
+				<div class="content">
+					<div class="textCenter"><a href=""><img src="images/products/book14.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术1</a></p>
+					<p class=" star star10">推荐:</p>
+					<p class="price2 paddingbottom15">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<div class="content">
+					<div class="textCenter"><a href=""><img src="images/products/book13.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术2</a></p>
+					<p class=" star star10">推荐:</p>
+					<p class="price2 paddingbottom15">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<div class="content">
+					<div class="textCenter"><a href=""><img src="images/products/book12.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术3</a></p>
+					<p class=" star star7">推荐:</p>
+					<p class="price2 paddingbottom15">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<div class="content">
+					<div class="textCenter"><a href=""><img src="images/products/book11.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术4</a></p>
+					<p class=" star star8">推荐:</p>
+					<p class="price2 paddingbottom15">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<div class="content">
+					<div class="textCenter"><a href=""><img src="images/products/book10.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术5</a></p>
+					<p class=" star star6">推荐:</p>
+					<p class="price2 paddingbottom15">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<div class="content">
+					<div class="textCenter"><a href=""><img src="images/products/book09.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术6</a></p>
+					<p class=" star star5">推荐:</p>
+					<p class="price2 paddingbottom15">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				<div class="content">
+					<div class="textCenter"><a href=""><img src="images/products/book08.jpg"/></a></div>
+					<div><img src="images/products/book06_80discout.jpg"/></div>
+					<p class="font14px"><a href="javascript:;">金融炼金术7</a></p>
+					<p class=" star star4">推荐:</p>
+					<p class="price2 paddingbottom15">&yen;:19<span class="delPrice">&yen;58</span></p>
+				</div>
+				
+			</div>
+			<!--右侧的评论区和商品详情-->
+			<div class="right float_right">
+				<!--顶部文字-->
+				<div class="contentTitle width980">
+					<ul id="commentsAreaTab">
+						<li>商品介绍</li>
+						<li class="current">评价<span>9999</span></li>
+					</ul>
+				</div>
+				<!--评论区--总评-->
+				<div class="width980 totalComments margintop30">
+					<div class="leftComment float_left textRight ">
+						<p class="font20px margintop10">好评度</p>
+						<p class="colorF91616">98%</p>
+					</div>
+					<div class="centerComment float_left marginleft45px">
+						<p class="procecssBar procecssBarBg1">好评(<span>95%</span>)</p>
+						<p class="procecssBar procecssBarBg2">中评(<span>2%</span>)</p>
+						<p class="procecssBar procecssBarBg3">差评(<span>3%</span>)</p>
+					</div>
+					<div class="rightComment float_left marginleft45px">
+						<p class="">路飞的笑0<span class="marginleft20px">content1</span><span class="marginleft20px">content1</span></p>
+						<p class="">取个名字男<span class="marginleft20px">content2</span><span class="marginleft20px">content2</span></p>
+						<p class="">这是用户名<span class="marginleft20px">content3</span><span class="marginleft20px">content3</span></p>
+					</div>
+				</div>
+				<div class="float_clear"></div>
+				<!--评论区--细评-->
+				<!---->
+				<div class="commentsTitle bgF2F2F2 width980 height28">
+					<!--会用到tab切换,因此使用ul li-->
+					<ul id="commentsDetaileTab">
+						<li class="current">全部评价(<span>9999</span>)</li>
+						<li>好评(<span>999</span>)</li>
+						<li>中评(<span>99</span>)</li>
+						<li>差评(<span>9</span>)</li>
+					</ul>
+					<div class="float_clear"></div>
+				</div>
+				<!--具体评价-->
+				<div class="commentsDetailes margintop20">
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论2-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论3-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论4-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论5-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论6-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论7-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论8-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论9-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					<!--评论10-->
+					<div class="height150">
+						<div class="commentsDetailesL height80 float_left box190 color939393">
+							<p class="star"> </p>
+							<p>下单后<span>5</span>天评论</p>
+							<p class="commentsDate">2017-05-15</p>
+						</div>
+						<div class="commentsDetailesC height80 float_left box550">
+							<p>书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关 键是价格真给力</p>
+						</div>
+						<div class="commentsDetailesR height80 float_left box190">
+							<p class="height28"><img src="images/userICON.png"/> 用户名</p>
+							<p>金牌会员</p>
+							<p>来自windows客户端</p>
+						</div>
+					</div>
+					
+				</div>
+				<!--具体评价结束-->
+				<!--分页标签-->
+				<ul id="pageTag" class="float_right width580 height28 textCenter">
+					<li class="prevPage"><a href="javascript:void(0);">上一页</a></li>
+					<li><a href="javascript:void(0);">1</a></li>
+					<li><a href="javascript:void(0);">2</a></li>
+					<li class="current"><a href="javascript:void(0);">3</a></li>
+					<li><a href="javascript:void(0);">4</a></li>
+					<li><a href="javascript:void(0);">5</a></li>
+					<li><a href="javascript:void(0);">6</a></li>
+					<span class="float_left">...</span>
+					<li class="nextPage"><a href="javascript:void(0);">下一页</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--模板可编辑区域结束-->
+		<!--底部广告-->
+		<div id="banner2" class="box1200 ">
+			<a href=""><img src="images/products/banner2.jpg"/></a>
+		</div>
+		
+		<!--footer-->
+		<div class="main_box margintop30" id="footer">
+			<div class="footerPics box1200 marginCenter">
+				<span><img src="images/index/222_11.png"/></span>
+				<span><img src="images/index/222_13.png"/></span>
+				<span><img src="images/index/222_15.png"/></span>
+				<span><img src="images/index/222_17.png"/></span>
+			</div>
+			<div class="footerLists marginCenter">
+				<dl class="float_left">
+					<dt>购物指南</dt>
+					<dd><a href="">购物流程</a></dd>
+					<dd><a href="">发票制度</a></dd>
+					<dd><a href="">账户管理</a></dd>
+					<dd><a href="">会员优惠</a></dd>
+				</dl>
+				    
+				<dl class="float_left">
+					<dt>支付方式</dt>
+					<dd><a href="">货到付款</a></dd>
+					<dd><a href="">网上支付</a></dd>
+					<dd><a href="">礼品卡支付</a></dd>
+					<dd><a href="">银行转帐</a></dd>
+				</dl>
+				    
+				<dl class="float_left">
+					<dt>订单服务</dt>
+					<dd><a href="">订单配送查询</a></dd>
+					<dd><a href="">订单状态说明</a></dd>
+					<dd><a href="">自助取消订单</a></dd>
+					<dd><a href="">自助修改订单</a></dd>
+				</dl>
+				<dl class="float_left">
+					<dt>退换货</dt>
+					<dd><a href="">退换货政策</a></dd>
+					<dd><a href="">自助申请退换货</a></dd>
+					<dd><a href="">退换货进度查询</a></dd>
+					<dd><a href="">退款方式和时间</a></dd>
+				</dl>
+				<dl class="float_left">
+					<dt>商家服务</dt>
+					<dd><a href="">商家中心</a></dd>
+					<dd><a href="">运营服务</a></dd>
+					<dd><a href="">加入尾品汇</a></dd>
+				</dl>
+			</div>
+			<div class="float_left">
+				<img src="images/logo_00.png"/>
+			</div>
+			<div class="float_clear"></div>
+			<p class="marginCenter margintop30"><span>公司简介</span><span>Investor Relations</span><span>网站联盟</span><span>乐购招商</span><span>机构销售 </span>  手机乐购</p>
+			<p class="textCenter margintop20 box1200" style="font-size: 10px;">Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,173 @@
+
+#banner{
+	margin-top: 62px;
+}
+/*banner右侧的样式*/
+#banner .right{
+	width: 200px;
+}
+/*后面还有p因此只设置第一代p的样式*/
+#banner .right>p{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+}
+/*设置数字*/
+#banner .right ul li .numBer{
+	background: #ff6600;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+/*设置热卖大框的宽,方便浮动*/
+.hotSales{
+	width: 190px;
+	border-bottom: 1px solid #ccc;
+	margin-left: 10px;
+	display: none;
+	cursor: pointer;
+}
+
+#banner .right ul li .hotSales img{
+	margin-top: 5px;
+}
+#banner .right ul li .hotSalesShort{
+	height: 42px;
+	/*margin-left: 10px;*/
+}
+/*设置图文的宽度,这样才能浮动起来*/
+#banner .right ul li .hotSales .booktextImg{
+	width: 106px;
+}
+
+/*今日推荐*/
+#bookDiscout .borderleft .content{
+	width: 210px;
+	margin:10px 30px 0px 0px;
+}
+#bookDiscout .borderleft .content p{
+	text-indent: 10px;
+}
+
+/*newbook*/
+#newBook .borderleft{
+	border: 1px solid #ccc;	
+	border-top-width: 0px;
+}
+#newBook .borderleft .content{
+	margin: 5px 15px;
+}
+
+#newBook .ebookright{
+	width: 282px;
+	border: solid 2px #ccc;
+	overflow-y: hidden;
+}
+/*设置每个li的宽度*/
+#newBook .ebookright ul li{
+	text-indent: 10px;
+	font-size: 12px;
+}
+/*设置图文的display 为none的属性,然后在设置disyes,这时候disYes才能生效,同时ebookRightImgText不能加任何前缀,否则后面的样式不能显示*/
+.ebookRightImgText{
+	display: none;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+}
+
+
+#newBook .ebookright ul li .ebookRightImgText span{
+	float: left;
+	font-size: 12px;
+	margin-right: 5px;
+	line-height: 38px;
+}
+#newBook .ebookright ul li .ebookRightImgText .ebookText{
+	width: 100px;
+	line-height: 18px;
+}
+
+/*独家供应*/
+#soleAgency{
+	position: relative;
+}
+/*设置宽度以及左右margin*/
+#soleAgency .borderleft .content{
+	width: 170px;
+	margin: 20px 10px 0px 20px;
+}
+/*设置左右箭头的背景属性*/
+#soleAgency #leftArrow,#soleAgency #rightArrow{
+	width: 20px;
+	height: 50px;
+	position: absolute;
+	cursor: pointer;
+	background-color: #CCCCCC;
+	background-image: url(../images/public/nav.png);
+	background-repeat: no-repeat;
+	top: 265px;
+}
+/*左右箭头的定位*/
+#soleAgency #leftArrow{
+	background-position: -10px 4px;
+	left:-10px;
+}
+#soleAgency #rightArrow{
+	background-position: -54px 4px;
+	right:0;
+}
+/*设置下面的每个原点*/
+#soleAgency #tabLi{
+	width:200px;
+	margin: 0 auto;
+}
+#soleAgency #tabLi li{
+	float: left;
+	font-size: 28px;
+	height: 28px;
+	line-height: 28px;
+	color: #ccc;
+	cursor: pointer;
+}
+#soleAgency #tabLi .current{
+	color: #ff6600;
+}
+
+/*猜你喜欢*/
+#wouldLike .borderleft .content{
+	width: 210px;
+	padding:10px 30px 0px 0px;
+}
+#wouldLike .borderleft .content p{
+	text-indent: 30px;
+}
+#wouldLike .wouldLikeContents{
+	border-bottom: 1px solid #CBCBCB;
+	padding-bottom: 10px;
+}
+/*猜你喜欢换一批*/
+#wouldLike .contentTitle #changeAnother{
+	background-image: url(../images/changeicon.gif);
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 40px;
+	color: deepskyblue;
+	height: 38px;
+	width: 80px;
+	padding-left: 80px;
+	cursor: pointer;
+}
+/**/
+.box1200 .bookBannerImgText{
+	margin: 10px 8px;
+}
+/*打折券的样式*/
+.box1200 .bookBannerImgText .bookBannerText .offsale{
+	background: #F91616;
+	width: 104px;
+	height: 16px;
+	line-height: 16px;
+	border-radius: 5px;
+	color: white;
+	text-indent: 10px;
+}

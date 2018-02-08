@@ -1,0 +1,111 @@
+/*设置header为relative,使得后面的模块能够进行定位*/
+#header{
+	/*background: #101010;*/
+	position: relative;
+}
+/*设置顶部的p高度和行高*/
+#header p{
+	height: 28px;
+	line-height: 28px;
+}
+/*定义header中log的定位,覆盖到黑色边框上面去*/
+#header .logo{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#header .logoText{
+	position: absolute;
+	letter-spacing: 5px;
+	height:32px;
+	line-height: 32px;
+	top: 39px;
+	left:130px;
+}
+/*导航菜单样式结束*/
+/*全部商品分类的menu的样式*/
+#nav{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+}
+#banner #subNav{
+	margin-right: 100px;
+}
+/*banner的li样式*/
+#banner #subNav li{
+	float: left;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+}
+#banner #subNav li a:hover{
+	color: red;
+}
+
+
+#searchShop{
+	position: absolute;
+	top: 34px;
+	right: 100px;
+	height: 52px;
+}
+#shopCart {
+	/*height: 42px;*/
+	/*position: absolute;
+	top: 10px;
+	right: 200px;*/
+}
+/*搜素+购物车*/
+#shopCart li
+{
+	width: 100px;
+	text-align: center;
+	font-size: 14px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #ebebeb;
+	border: solid 1px #ccc;
+	float: left;
+}
+
+/*
+ * 注意: 同时有背景色和背景图片时,不能使用复合属性
+ * 先满足背景图片,再显示背景色
+ * */
+#shopCart .current
+{
+	border: solid 1px #ff6700;
+	text-align: left;
+	width: 60px;
+	padding-left: 40px;
+	color: #fff;
+	background-image: url(../images/bgicon.png);
+	background-color: #ff6700;
+	background-repeat: no-repeat;
+	background-position: 0px -43px;
+}
+#search{
+	/*position: absolute;
+	left: 500px;
+	top: 10px;*/
+}
+#search #keywords
+{
+	width: 390px;
+	height: 34px;
+	text-indent: 10px;
+	border: solid 2px #ff6700;
+}
+
+#search #searchBtn
+{
+	width: 44px;
+	height: 38px;
+	margin-right: 40px;
+	border: solid 3px #ff6700;
+	background-image: url(../images/bgicon.png);
+	background-color: #ff6700;
+	background-repeat: no-repeat;
+	background-position: -4px -3px;
+}

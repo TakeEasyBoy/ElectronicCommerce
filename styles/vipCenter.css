@@ -1,0 +1,211 @@
+/*VIP首页的字体*/
+#vipWelcom{
+	height: 55px;
+	line-height: 55px;
+	padding: 15px 0px 0px 280px;
+	color: #9F9F9F;
+}
+
+#vipTabTag{
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	width: 400px;
+	height: 50px;
+}
+#vipTabTag li{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+	cursor: pointer;
+}
+#vipTabTag .current{
+	background-color: #FF6600;
+	color: white;
+}
+
+/*banner*/
+/*背景图颜色分布均匀,所以用PS扣一点图下来,然后使被背景平铺*/
+#banner{
+	margin-top: 88px;
+	height: 500px;
+	background-image:url(../images/bannerbg.gif) ;
+}
+#banner .bannerLeft,#banner .bannerCenter,#banner .bannerRight{
+	height: 474px;
+	background-color: white;
+}
+#banner .bannerCenter{
+	width: 730px;
+	margin: 0px 5px;
+}
+/*vip每日特权*/
+#banner .bannerLeft .vipSpecial{
+	height: 30px;
+	line-height: 30px;
+	letter-spacing: 5px;
+	margin-top: 10px;
+}
+/*设置背景定位*/
+.getLedouBg{
+	background-image: url(../images/top_focus_lucky_1_02.gif);
+	background-repeat: no-repeat;
+	background-position: 100px -20px;
+}
+#banner .bannerLeft .getLedouBg p,#banner .bannerLeft div div p{
+	font-size: 16px;
+	text-indent: 10px;
+}
+/*登录头像背景*/
+#banner .bannerRight .userIcon p{
+	padding-left: 80px;
+	height: 34px;
+	line-height: 34px;
+}
+#banner .bannerRight .userIcon{
+	background-image:url(../images/vips/u_avatar_default.gif) ;
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	height: 68px;
+}
+/*乐豆背景*/
+.ledouIcon,.disCountIcon{
+	background-repeat: no-repeat;
+	height: 30px;
+	line-height: 30px;
+	background-position: 28px 7px;
+	padding-left: 50px;
+	margin-top: 30px;
+}
+/*乐豆的背景*/
+.ledouIcon{
+	background-image:url(../images/vips/icon_u_worth_1.png) ;
+	
+}
+#banner .bannerRight>p{
+	font-size: 14px;
+
+}
+/*优惠券背景*/
+.disCountIcon{
+	background-image:url(../images/vips/icon_u_worth_2.png) ;
+}
+/*字体背景*/
+.fontBg{
+	background-image:url(../images/vips/u_have_tt_bg.png) ;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+/*小banner*/
+#banner2{
+	height: 166px;
+}
+#banner2 #littleBanner{
+	height: 140px;
+	padding-top: 10px;
+}
+#banner2 #littleBanner li{
+	height: 140px;
+	width: 290px;
+	float: left;
+	margin-right: 10px;
+	background-color: white;
+}
+#banner2 #littleBanner li .littleBannerLeft{
+	margin: 30px 0px 0px 14px;
+}
+#banner2 #littleBanner li .littleBannerLeft p{
+	height: 30px;
+	line-height: 30px;
+}
+
+/*乐豆兑换*/
+#exchangeTicket{
+	
+}
+#exchangeTicket .exTicketContents{
+	margin-top: 15px;
+	height: 290px;
+	
+}
+#exchangeTicket .exTicketContents .content{
+	background-image: url(../images/vips/bg01.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	border: 1px solid #ccc;
+	width:210px;
+	position: relative;
+	/*margin-right: 28px;*/
+}
+.limitedNum{
+	background-image: url(../images/vips/D.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+	top: -16px;
+	left:0px;
+}
+.btnBg{
+	margin-top: 5px;
+	background-image: url(../images/vips/btn.png);
+	background-position: 35px 0px;
+	background-repeat: no-repeat;
+	height: 40px;
+	line-height: 30px ;
+	cursor: pointer;
+}
+.vipSalePrice{
+	background-image: url(../images/vips/D_48.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+    top: -10px;
+    left: 0px;
+}
+
+/*加入购物车的样式*/
+.vipAddToCartIcon{
+	background-position: 15px -33px;
+	width: 30px;
+	height: 22px;
+	
+}
+.vipAddToCart {
+	position: absolute;
+	width: 210px;
+	height: 54px;
+	 display: none;
+	top: 0px;
+	left: 0px;
+	
+}
+.vipAddToCart .vipAddToCartBtn{
+	background-color: #FF6600;
+	width: 210px;
+	border: none;
+	height: 54px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/*3F*/
+#vipSpecial .left,#vipSpecial .center,#vipSpecial .right{
+	width: 364px;
+	height: 325px;
+	margin: 15px 18px;
+}
+#vipSpecial .left>p,#vipSpecial .center>p,#vipSpecial .right>p{
+	height: 30px;
+	line-height: 30px;
+}

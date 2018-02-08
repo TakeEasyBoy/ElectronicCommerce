@@ -1,0 +1,249 @@
+#productDetailes .title{
+	padding: 5px 0px;
+}
+#productDetailes .title span{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	margin: 5px 5px;
+}
+#productDetailes #detailes .zoomArea{
+	width: 340px;
+	height: 360px;
+	padding: 10px 10px;
+}
+/*设置价格区域背景色,段落样式,字体等*/
+#textDetailes .priceDetailes{
+	height:140px;
+	background-color: #F5F5F5;
+}
+#textDetailes .priceDetailes .left{
+	width: 600px;
+}
+#textDetailes .priceDetailes .left p{
+	text-indent:10px;
+	height: 45px;
+	line-height: 30px;
+}
+#textDetailes .priceDetailes .right{
+	width: 70px;
+	text-indent: 10px;
+	border-left: 1px solid #ccc;
+	margin: 10px 10px 0px 0px;
+}
+
+#textDetailes>p{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+}
+.discoutBack{
+	background-image: url(../images/Q.png);
+	background-repeat: no-repeat;
+	/*background-position: 10px 10px;*/
+}
+/*优惠券的样式*/
+.discount{
+	padding: 0px 40px 0px 20px;
+}
+
+/*种类选择的样式*/
+.categeCheck{
+	width: 580px;
+	height:100px;
+}
+.categeCheck span{
+	margin-top:6px ;
+}
+/*设置默认的border为2px,否则在鼠标hover上去的时候布局会乱掉*/
+.categeCheck p{
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	width: 96px;
+	height: 30px;
+	line-height: 30px;
+	border: 2px solid #ccc;
+	margin: 5px 5px;
+}
+.categeCheck p:hover{border: 2px solid #FF6600;}
+/*设置当前选中的框的种类*/
+.categeCheck .current{
+	border: 2px solid #FF6600;
+	background-image: url(../images/checked.gif);
+	background-repeat: no-repeat;
+	background-position: 86px 18px;
+}
+
+/*设置选中的数量*/
+.addToCart{
+	margin-top: 15px;
+	width: 300px;
+	float: left;
+}
+.addToCart #addNum{
+	width: 50px;
+	height: 50px;
+}
+.addToCart #addCartBtn{
+	width: 150px;
+	height: 50px;
+	background-color: #FF6600;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	color: white;
+	margin-left: 10px;
+}
+
+/*设置数字输入框*/
+/*设置数量处的样式*/
+.buyNumCon{
+	height: 20px;
+	float: left;
+}
+.buyNumCon li{
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	border: solid 1px #ccc;
+	text-align: center;
+	width:20px;
+	cursor: pointer;
+}
+.buyNumCon li input{
+	border: none;
+	text-align: center;
+}
+.buyNumCon .buyNumInput{
+	width: 35px;
+}
+/*猜你喜欢*/
+#popSingleProduct .borderleft .content{
+	width: 210px;
+	padding:10px 30px 0px 0px;
+}
+#popSingleProduct .borderleft .content p{
+	text-indent: 10px;
+}
+/*设置单独的人气单品的宽度*/
+#popSingleProduct .contentTitle p{
+	width: 120px;
+}
+
+/*底部评论区*/
+#commentsArea{
+	height: 1850px;
+}
+/*后面也有left属性,所以使用后代选择器*/
+#commentsArea .leftArea{
+	border: 1px solid #ccc;
+	height: 1850px;
+	overflow-y: hidden;
+}
+#commentsArea .leftArea>p{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+}
+#commentsArea .leftArea .content{
+	width: 180px;
+	margin: 5px auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1px;/*夹着个1px的目的是为了隐藏炒出来的下边线*/
+}
+#commentsArea .leftArea .content>p{
+	text-indent: 10px;
+}
+#commentsArea>.right{
+	width: 980px;
+	height: 1850px;
+	border: 1px solid #ccc;
+}
+
+/*评论区*/
+#commentsAreaTab li{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	width: 100px;
+}
+/*当前样式*/
+#commentsAreaTab .current{
+	background-color: #FF6600;
+	color: white;
+}
+/*评价总览*/
+#commentsArea .totalComments .leftComment{
+	width: 152px ;
+	height: 143px;
+	font-size: 50px;
+}
+#commentsArea .totalComments .centerComment{
+	width: 280px;
+	height: 143px;
+}
+#commentsArea .totalComments .centerComment p{
+	line-height: 40px;
+	height: 35px;
+}
+#commentsArea .totalComments .rightComment p{
+	line-height: 40px;
+	height: 35px;
+}
+/*评价进度条*/
+.procecssBar{
+	
+	background-repeat: no-repeat;
+	background-position: 100px 13px;
+}
+.procecssBarBg1{
+	background-image: url(../images/processbar01.gif);
+}
+.procecssBarBg2{
+	background-image: url(../images/processbar02.gif);
+}
+.procecssBarBg3{
+	background-image: url(../images/processbar03.gif);
+	background-repeat: no-repeat;
+}
+/*设置好中差评的宽高等属性*/
+#commentsArea .right .commentsTitle #commentsDetaileTab li{
+	width: 120px;
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	margin-left: 20px;
+	font-size: 14px;
+	cursor: pointer;
+}
+/*设置好中差平切换样式*/
+#commentsArea .right .commentsTitle #commentsDetaileTab .current{
+	color: #F91616;
+}
+/**/
+#commentsArea .right .commentsDetailes{
+	margin: 10px 20px;
+}
+#commentsArea .right .commentsDetailes .commentsDetailesL,
+#commentsArea .right .commentsDetailes .commentsDetailesC,
+#commentsArea .right .commentsDetailes .commentsDetailesR {
+	line-height: 20px;
+	height: 20px;
+}
+
+#pageTag li{
+	float: left;
+	width: 30px;
+	margin: 0 10px;
+	border: solid 1px #ccc;
+	height: 25px;
+	line-height: 25px;
+}
+#pageTag .prevPage,#pageTag .nextPage{
+	width: 40px;
+}
+#pageTag .current{
+	border: solid 1px white;
+	cursor: default;
+}
